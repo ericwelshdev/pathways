@@ -1,0 +1,171 @@
+﻿
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto-v15-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+       url('../fonts/roboto-v15-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v15-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v15-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v15-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v15-latin-100.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v15-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v15-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v15-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v15-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v15-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v15-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v15-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v15-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight:100;
+  color: #778293;
+   font-weight:300;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+
+textarea.form-control {
+	height: 300px;
+}
+
+*::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.7) !important;
+}
+
+ul.tagit li.tagit-choice {
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #CAD8F3;
+    background: none;
+    background-color: #dee7f8;
+    font-weight: normal;
+}
+
+.chat-discussion {
+	background:transparent;
+	height: 450px;
+	overflow-y: auto;
+}
+
+
+.message {
+	background-color:rgba(0,0,0,0.35)!important;
+	/* border: 1px solid #e7eaec; */
+	text-align: left;
+	display: block;
+	padding: 10px 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+.chat-user {
+	padding: 8px 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.35) !important;
+}
+
+.chat-user.active {
+	border-left: 4px solid #ff7930;
+    border-right: 4px solid transparent;
+	background-color:rgba(0,0,0,0.35)!important;
+}
+
+.chat-user:hover {
+	background-color:rgba(0,0,0,0.35)!important;
+	border-bottom: 1px solid darkgrey;
+}
+
+.chat-user-last-message {
+	font-size: 10px;
+	margin-left: 45px;
+	padding-bottom: 10px;
+}
+
+.chat-user-container{
+    margin-left:20px;
+}
+
+.message-content {
+	display: block;
+	font-size: 13px;
+	color: #fff;
+}
+
+.btn-default {
+	color:#333333;
+	background: white;
+	border: 1px solid #e7eaec;
+}
+
+.modal-content, .dark {
+	 color: #333333;
+}
+
+.chat-button {
+	margin-top: 0px;
+}
+
+hr {
+	margin-top: 22px;
+	margin-bottom: 22px;
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,0.35)!important;
+}
+
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	height: 37px;
+	margin-bottom: 0px;
+}
+
+
+  #statusbar {
+	min-height: 0px;
+	border-radius: 0 0 3px 3px;
+	border-top: none;
+	line-height: 30px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}

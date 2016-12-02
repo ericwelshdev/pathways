@@ -1,0 +1,1219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onramp Counselor View</title>
+    <link rel="icon" href="images/pathways-color-icon.png">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="css/progress-timeline.css" rel="stylesheet" type="text/css">
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-main-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-counselor-view-style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body id="skin-blur-lights">
+
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- Header -->
+    <header class="l-header">
+
+        <!-- Logo -->
+        <a href="" class="b-logo">
+            <img src="images/logo.png" alt="My Path">
+        </a>
+        <!-- /Logo -->
+
+        <div class="b-sidebar">
+
+            <div class="b-sidebar__overlay"></div>
+
+            <a href="" class="b-sidebar__toggler">
+                <img src="assets/img/menu.svg" alt="">
+            </a>
+
+            <div class="b-sidebar__content">
+
+                <!-- Topbar -->
+                <div class="b-topbar bg-black">
+
+                    <!-- User panel -->
+                    <div class="b-user-panel">
+                        <div class="b-user-panel__info">
+                            <a href="" class="b-user-panel__name">Alexandra Williams</a>
+                            <div class="b-user-panel__pict">
+                                <img src="images/avatars/f3.jpg" class="img-circle avatar-height-30" alt="Alexandra Williams">
+                            </div>
+                        </div>
+                        <ul class="b-user-panel__menu animated fadeInUp">
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-user margin-right-5"></i> Profile</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-question-circle margin-right-5"></i> Help</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-sign-out margin-right-5"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /User panel -->
+                    <!-- Notifications -->
+                    <!-- <div class="b-notifications">
+                        <a href="" class="b-notifications__icon">
+                            <span class="b-notifications__icon-text">
+                                Notifications
+                            </span>
+                            <span class="b-notifications__icon-picture">
+                                <img src="images/notifications.png" alt="">
+                                <span class="b-notifications__count">153</span>
+                            </span>
+                        </a>
+                        <ul class="b-notifications__list">
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_blue">
+                                        <i class="b-icon b-icon_path"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have added a new tool. Click here to try it.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 min. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have received your term paper grade.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 h. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_violet">
+                                        <i class="b-icon b-icon_settings"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have made a system upgradee.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have cancelled your mid term exam.
+                                    </span>
+                                    <span class="b-notifications__item-time">43 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_red">
+                                        <i class="b-icon b-icon_goal"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        The T&amp;C for your Msc. Computer Science have been
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_orange">
+                                        <i class="b-icon b-icon_quote"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        A new quote theme has been installed.
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- /Notifications -->
+                    <!-- Search form -->
+                    <!-- <form class="b-search-form">
+                        <input type="text" class="b-search-form__input" placeholder="Search...">
+                        <button type="submit" class="b-search-form__button"></button>
+                    </form> -->
+                    <!-- /Search form -->
+                    <!-- skin changer modal-->
+                    <div style="display:none;" class="modal fade in" id="changeSkin" tabindex="-1" role="dialog" aria-hidden="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h4 class="modal-title">Change Template Skin</h4></div>
+                                <div class="modal-body">
+                                    <div class="row template-skins">
+                                        <a data-skin="skin-blur-violate" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-violate.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-lights" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-lights.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-city" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-city.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-greenish" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-greenish.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-night" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-night.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-blue" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-blue.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunny" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunny.jpg" alt="">
+
+                                        </a><a data-skin="skin-retro-burn" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-retro-burn.jpg" alt="">
+
+                                        </a><a data-skin="skin-tectile" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-tectile.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-chrome" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chrome.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-ocean" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-ocean.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunset" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunset.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-yellow" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-yellow.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-kiwi" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-kiwi.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-nexus" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-nexus.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-summer-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-summer-bokeh.jpg" alt="">
+                                        </a>                                       
+                                        <a data-skin="skin-blur-spring-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-spring-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-chalkboard" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chalkboard.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skin changer modal-->
+
+                </div>
+                <!-- /Topbar -->
+                <!-- Menu -->
+
+                <nav class="b-menu bg_opacity60">
+
+                    <div class="col-lg-6">
+                        <ul class="b-menu__list">
+                            <li class="b-menu__list-item -active-item">
+                                <a href="">Dashboard</a>
+                            </li>
+                            <li class="b-menu__list-item">
+                                <a href="">Merge</a>
+                            </li>
+                            <li class="b-menu__list-item">
+                                <a class="collapse-link" >Highschools</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <a id="settings"  data-toggle="modal" href="#changeSkin"><i class="fa fa-cog margin-right-5 "></i> Change Skin</a>
+                    </div>
+
+</nav>
+
+
+                <!-- /Menu -->
+
+            </div>
+        </div>
+
+    </header>
+
+    <div id="navbarHS" class="navbar-collapse ">
+        <ul id="navbarHSContent" class="nav navbar-nav navbar-left collapse animated fadeInDown" >
+            <li class="active">
+                <a class="collapse-link" href="#"> Highschool 1</a>
+            </li>
+            <li>
+                <a class="collapse-link" href="#" > Highschool 2</a>
+            </li>
+            <li>
+                <a class="collapse-link" href="#" > Highschool 3</a>
+            </li>
+            <li>
+                <a class="collapse-link" href="#" > Highschool 4</a>
+            </li>
+            <li>
+                <a class="collapse-link" href="#"> Highschool 5</a>
+            </li>
+            <li>
+                <a class="collapse-link" href="#" > Highschool 6</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- /Header -->
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- start main content wrapper-->
+    <!--<div style="position: relative; overflow: hidden; width: auto; height: 100%;" class="slimScrollDiv">
+        <div data-init="true" style="overflow: hidden; width: auto; height: 100%" data-scrollbar="true" data-height="100%" class="bg-silver">-->
+    <!-- begin page -->
+
+    <!-- bread crumb-->
+    <ol class="breadcrumb animated fadeInRight">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li class="active">
+            <strong>Counselor View</strong>
+        </li>
+    </ol>
+    <!--bread crumb-->
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+      
+        <div class="row">
+            
+
+            <div class="col-lg-10">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35 border-top-radius" ">
+
+                        <h5>Students </h5>
+                        <!--<span class="label label-warning centered">Updated</span>-->
+                    </div>
+                    <div class="ibox-content bg_opacity35 border-bottom-radius">
+                        <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-3">
+                                <a href="">
+                                    <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="135" data-speed="1500" data-decimals="0">0</div>
+                                </a>
+
+                                <div class="icon-count-footer">
+                                    <i class="fa fa-check-circle"></i> Enrolled
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="45" data-speed="1500" data-decimals="0">0</div>
+                                </a>
+                                <div class="icon-count-footer">
+                                    <i class="fa fa-check-circle"></i> Completed
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="35" data-speed="1500" data-decimals="0">0</div>
+                                </a>
+                                <div class="icon-count-footer">
+                                    <i class="fa fa-exclamation-circle"></i> Needs Assistance
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35 border-top-radius">
+
+                        <h5 class="text-graysmoke">Highschools </h5>
+                        <!--<div class="ibox-tools">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-highschool animated fadeInUp">
+                                <li>
+                                    <a href="#"><i class="fa fa-graduation-cap"></i> Highschool 1</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-graduation-cap"></i> Highschool 2</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-graduation-cap"></i> Highschool 3</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-graduation-cap"></i> Highschool 4</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-graduation-cap"></i> Highschool 5</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-graduation-cap"></i> Highschool 6</a>
+                                </li>
+                            </ul>
+
+                        </div>-->
+                    </div>
+
+                    
+                    <div class="ibox-content bg_opacity35 border-bottom-radius">
+                        <a href=""><div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="12" data-speed="1500" data-decimals="0">0</div></a>
+
+                        <div class="icon-count-footer-placeholder">
+                            <i class="fa "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35 border-top-radius">
+
+                        <h5 class="text-graysmoke">Readiness Step Overview </h5>
+
+                    </div>
+                    <div class="ibox-content bg_opacity35 border-bottom-radius ">
+                        <div class="row">
+                            <div class="col-md-2">
+
+
+                            </div>
+                            <div class="col-md-2">
+                                <div class="count-to count-metric-overview font-bold " data-from="0" data-to="740" data-speed="1500" data-decimals="0">0</div>
+                                <span class="count-metric-small ">Students</span>
+                                <br />
+                                <div class="easy-pie-chart gradient" data-percent="89">
+                                    <span class="percent">0</span>
+
+                                </div>
+                                <div class="font-20 text-whitesmoke text-center"><small>Orientation</small></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="count-to count-metric-overview font-bold " data-from="0" data-to="249" data-speed="1500" data-decimals="0">0</div>
+                                <span class="count-metric-small ">Students</span>
+                                <br />
+                                <div class="easy-pie-chart gradient" data-percent="25">
+                                    <span class="percent">0</span>
+                                </div>
+                                <div class="font-20 text-whitesmoke text-center"><small>Assessment</small></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="count-to count-metric-overview font-bold " data-from="0" data-to="493" data-speed="1500" data-decimals="0">0</div>
+                                <span class="count-metric-small">Students</span>
+                                <br />
+                                <div class="easy-pie-chart gradient" data-percent="55">
+                                    <span class="percent">0</span>
+
+                                </div>
+                                <div class="font-20 text-whitesmoke text-center"><small>Financial Aid</small></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="count-to count-metric-overview font-bold " data-from="0" data-to="247" data-speed="1500" data-decimals="0">0</div>
+                                <span class="count-metric-small">Students</span>
+                                <br />
+                                <div class="easy-pie-chart gradient" data-percent="28">
+                                    <span class="percent">0</span>
+
+                                </div>
+                                <div class="font-20 text-whitesmoke text-center"><small>Ed Plan</small></div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35 border-top-radius">
+
+
+                        <h5 class="text-graysmoke">Needs Assistance </h5>
+
+                        <!--<div class="student-filter pull-right">
+            <form class="" action="#">
+
+                <div class="sort-dropdown">
+                    <select>
+                        <option>All</option>
+                        <option>College</option>
+                        <option>Gender</option>
+                        <option>Ethnicity</option>
+                    </select>
+                </div>
+            </form>
+        </div>-->
+
+                        <div class="student-search pull-right">
+                            <form role="search" class="" action="#">
+                                <div id="search">
+                                    <input class="" placeholder="Search..." type="text"><button data-original-title="Search" type="submit" class="tip-right" title=""><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+
+                    </div>
+                    <div id="cardListContainer" class=" ibox-content bg_opacity35 border-bottom-radius">
+                        <div class="row">
+
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                                <div class="databox databox-xlg databox-halved databox-shadowed databox-vertical">
+                                    <div class="databox-top bg-white padding-10">
+                                        <div class="col-lg-4 col-sm-4 col-xs-4">
+                                            <img src="images/avatars/f9.jpg" style="width:75px; height:75px;" class="image-circular bordered-3 bordered-palegreen">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-8 col-xs-8 text-align-left padding-10">
+                                            <span class="databox-header carbon no-margin">Kim Ryder</span>
+                                            <span class="databox-text lightcarbon no-margin"> <i class="glyphicon glyphicon-map-marker"></i> Foothill Highschool</span>
+                                        </div>
+                                    </div>
+                                    <div class="databox-bottom bg-white no-padding">
+                                        <div class="databox-row row-12">
+                                            <div class="databox-row row-6 no-padding">
+                                                <div class="databox-cell cell-3 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver  no-margin">Orientation</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-check-circle i-limegreen"></i> </span>
+                                                </div>
+                                                <div class="databox-cell cell-3 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver no-margin">Assessment</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-check-circle i-limegreen"></i> </span>
+                                                </div>
+                                                <div class="databox-cell cell-3 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver no-margin">Financial Aid</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-times-circle i-red"></i> </span>
+                                                </div>
+                                                <div class="databox-cell cell-3 no-padding text-align-center">
+                                                    <span class="databox-text sonic-silver no-margin">Ed Plan</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-check-circle i-limegreen"></i> </span>
+                                                </div>
+                                            </div>
+                                            <div class="databox-row row-6 padding-10">
+                                                <button class="btn btn-palegreen btn-sm pull-right" data-toggle="modal" data-target="#contactStudentModal">VIEW</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                                <div class="databox databox-xlg databox-halved databox-shadowed databox-vertical">
+                                    <div class="databox-top bg-white padding-10">
+                                        <div class="col-lg-4 col-sm-4 col-xs-4">
+                                            <img src="images/avatars/m4.jpg" style="width:75px; height:75px;" class="image-circular bordered-3 bordered-palegreen">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-8 col-xs-8 text-align-left padding-10">
+                                            <span class="databox-header carbon no-margin">Martin  Wallance</span>
+                                            <span class="databox-text lightcarbon no-margin"> <i class="glyphicon glyphicon-map-marker"></i> Foothill Highschool</span>
+                                        </div>
+                                    </div>
+                                    <div class="databox-bottom bg-white no-padding">
+                                        <div class="databox-row row-12">
+                                            <div class="databox-row row-6 no-padding">
+                                                <div class="databox-cell cell-3 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver  no-margin">Orientation</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-check-circle i-limegreen"></i> </span>
+                                                </div>
+                                                <div class="databox-cell cell-3 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver no-margin">Assessment</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-check-circle i-limegreen"></i> </span>
+                                                </div>
+                                                <div class="databox-cell cell-3 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver no-margin">Financial Aid</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-times-circle i-red"></i> </span>
+                                                </div>
+                                                <div class="databox-cell cell-3 no-padding text-align-center">
+                                                    <span class="databox-text sonic-silver no-margin">Ed Plan</span>
+                                                    <span class="databox-number lightcarbon no-margin"><i class="fa fa-check-circle i-limegreen"></i> </span>
+                                                </div>
+                                            </div>
+                                            <div class="databox-row row-6 padding-10">
+                                                <button class="btn btn-palegreen btn-sm pull-right" data-toggle="modal" data-target="#contactStudentModal">VIEW</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                                <div class="databox databox-xlg databox-halved databox-shadowed databox-vertical">
+                                    <div class="databox-top bg-white padding-10">
+                                        <div class="col-lg-4 col-sm-4 col-xs-4">
+                                            <img src="images/logos/foothill-hs.png" style="width:75px; height:75px;" class="image-circular bordered-3 bordered-palegreen">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-8 col-xs-8 text-align-left padding-10">
+                                            <span class="databox-header carbon no-margin">Foothill Highschool</span>
+                                            <span class="databox-text lightcarbon no-margin"> <i class="glyphicon glyphicon-map-marker"></i> Cupertino , CA </span>
+                                        </div>
+                                    </div>
+                                    <div class="databox-bottom bg-white no-padding">
+                                        <div class="databox-row row-12">
+                                            <div class="databox-row row-6 no-padding">
+                                                <div class="databox-cell cell-6 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver no-margin">Couselors</span>
+                                                    <a href="" data-toggle="modal" data-target="#contactHighschoolModal"><span class=" databox-text i-green no-margin"><i class="fa fa-envelope lightcarbon" aria-hidden="true"></i>Tammy Wright  </span></a>
+                                                    <a href="" data-toggle="modal" data-target="#contactHighschoolModal"><span class=" databox-text i-green no-margin"><i class="fa fa-envelope lightcarbon" aria-hidden="true"></i>Jon Willington </span></a>
+                                                </div>
+
+                                                <div class="databox-cell cell-3 no-padding text-align-center bordered-right bordered-platinum">
+                                                    <span class="databox-text sonic-silver no-margin">Student Count</span>
+                                                    <span class="databox-number lightcarbon no-margin">395 </span>
+                                                </div>
+                                                <div class="databox-cell cell-3 no-padding text-align-center">
+                                                    <span class="databox-text sonic-silver no-margin">Completed</span>
+                                                    <span class="databox-number lightcarbon no-margin">37% </span>
+                                                </div>
+                                            </div>
+                                            <div class="databox-row row-6 padding-10">
+                                                <button class="btn btn-palegreen btn-sm pull-right" data-toggle="modal" data-target="#contactHighschoolModal">VIEW</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- end page -->
+    <!--</div>
+        <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 44px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 195.511px;" class="slimScrollBar ui-draggable"></div>
+        <div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;" class="slimScrollRail"></div>
+    </div>-->
+    <!-- end main content wrapper-->
+    <!-- modal -->
+    <!-- student modal-->
+    <div style="display: none;" class="modal inmodal fade" id="contactStudentModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="modal-title"><i class="fa fa-user"></i> Student</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="profile-container">
+                                <div class="profile-header row">
+                                    <div class="col-lg-2 col-md-4 col-sm-12 text-center" style="margin-left:10px;">
+                                        <img src="images/avatars/f9.jpg" alt="" class="header-avatar">
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 profile-info">
+                                        <div class="header-fullname">Kim Ryder</div>
+                                        <!--<a href="#" class="btn btn-palegreen btn-sm  btn-follow">
+                                            <i class="fa fa-check"></i>
+                                            Following
+                                        </a>-->
+                                        <div class="header-information">
+                                            Student
+                                        </div>
+                                        <i class="glyphicon glyphicon-map-marker"></i> Foothill Highschool
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12 profile-stats">
+                                        <br />
+                                        <div id="student-readiness-med" class="row">
+                                       
+                                            <div class="col-sm-3">
+                                                <div class="step-content">
+
+                                                    <div class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                                        <span class="step-icon step-icon-check" href=""></span>
+                                                    </div>
+
+                                                </div>
+                                                <h4><span href="#">Orientation</span></h4>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="step-content">
+
+                                                    <div class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                                        <span class="step-icon step-icon-check" href=""></span>
+                                                    </div>
+
+                                                </div>
+                                                <h4><span href="#">Assessment</span></h4>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="step-content">
+
+                                                    <div class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                                        <span class="step-icon step-icon-times" href=""></span>
+                                                    </div>
+
+                                                </div>
+                                                <h4><span href="#">Financial Aid</span></h4>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="">
+
+                                                    <div class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                                        <span class="step-icon step-icon-check" href=""></span>
+                                                    </div>
+
+                                                </div>
+                                                <h4><span href="#">Ed Plan</span></h4>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="profile-body">
+                                        <div class="col-lg-12">
+                                            <div class="tabbable">
+                                                <ul class="nav nav-tabs tabs-flat  nav-justified" id="student-tabnav">
+                                                    <li class="tab-red">
+                                                        <a aria-expanded="false" data-toggle="tab" id="student-messagestab" href="#student-messages">
+                                                            <i class="fa fa-envelope-o"></i> Messages
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-palegreen">
+                                                        <a aria-expanded="false" data-toggle="tab" id="student-contacttab" href="#student-notes">
+                                                            <i class="fa fa-sticky-note-o"></i> Notes
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+
+
+
+
+                                                <div class="tab-content tabs-flat">
+
+                                                    <div id="student-messages" class="tab-pane animated fadeInDown">
+                                                        <div class="row pd-left10">
+                                                            <!--messages-->
+                                                            <div class="col-md-12">
+                                                                <div class="chat-discussion" style="max-height:200px; overflow-y:scroll">
+                                                                    <div class=" chat-message left">
+                                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                                            <span class="message-date"> Mon Jan 26 2015 - 18:39:23 </span>
+                                                                            <span class="message-content">
+                                                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message left">
+                                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                                It uses a dictionary of over 200 Latin words.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                                It uses a dictionary of over 200 Latin words.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <!-- send message-->
+                                                                <hr />
+                                                                <div class="chat-message-form">
+                                                                    <form class="chat-input">
+                                                                        <div class="input-group add-on">
+                                                                            <input class="chat-input-box" placeholder="Send a message..." id="srch-term" type="text">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-default chat-button">Send</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div id="student-notes" class="tab-pane animated fadeInDown collapse">
+                                                        <div class="row">
+                                                            <!--notes-->
+                                                            <div class="col-md-12">
+                                                                <div class="feed-activity-list" style="max-height:200px; overflow-y:scroll">
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/m2.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Michael Smith </strong> added note. <br>
+                                                                            <small class="text-muted">2 Weeks ago 5:20 pm - 10.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/f9.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Kim Ryder</strong> added note. <br>
+                                                                            <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/f9.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Kim Ryder</strong> added note. <br>
+                                                                            <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                                <!-- add note-->
+                                                                <hr />
+                                                                <div class="chat-message-form">
+                                                                    <form class="chat-input">
+                                                                        <div class="input-group add-on">
+                                                                            <input class="chat-input-box" placeholder="Add note..." id="srch-term" type="text">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-default chat-button">Add Note</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <!--<a href="" class="btn btn-palegreen btn-sm" data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Discard"><i class="fa fa-times"></i> Cancel</a>-->
+                    <a href="" class="btn btn-white btn-sm pull-right " data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Ok"><i class="fa fa-reply"></i> Ok</a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- highschool modal  -->
+    <div style="display: none;" class="modal inmodal fade" id="contactHighschoolModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="modal-title"><i class="fa fa-graduation-cap"></i> Highschool</h3>
+                </div>
+                <div class="modal-body">
+                    <!--<form action="/" method="POST" name="email_to_form">-->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="profile-container">
+                                <div class="profile-header row">
+                                    <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                                        <img src="images/logos/foothill-hs.png" alt="" class="header-avatar">
+                                    </div>
+                                    <div class="col-lg-2 col-md-8 col-sm-12 profile-info">
+                                        <div class="header-fullname">Tammy Wright</div>
+
+                                        <div class="header-information">
+                                            Student Counselor
+                                        </div>
+                                        <i class="glyphicon glyphicon-map-marker"></i> Foothill Highschool
+                                    </div>
+
+                                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 profile-stats">
+                                        <br />
+                                        <div id="student-readiness-med" class="row">
+
+                                            <div class="col-md-3">
+
+
+                                            
+
+
+                                            </div>
+                                            <div class="col-md-4">
+
+                                                <div class="stats-title">Contact</div>
+                                                <div class="stats-container">
+                                                    <div class="stats-info">Phone: +1 555-555-5555</div>
+                                                    <div class="stats-info">Email: tammywright@abc.com</div>
+                                                    <div class="stats-info">Sykpe: tammywright</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+
+                                                <div class="stats-title">Location</div>
+                                                <div class="stats-container">
+                                                    <div class="stats-info">Foothill Highschool</div>
+                                                    <div class="stats-info">4375 Foothill Rd</div>
+                                                    <div class="stats-info">Pleasanton, CA 94588</div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    <!--</div>-->
+
+                                    <div class="profile-body">
+                                        <div class="col-lg-12">
+                                            <div class="tabbable">
+                                                <ul class="nav nav-tabs tabs-flat  nav-justified" id="counselor-tabnav">
+                                                    <li class="tab-red">
+                                                        <a aria-expanded="false" data-toggle="tab" id="counselor-messagestab" href="#counselor-messages">
+                                                            <i class="fa fa-envelope-o"></i> Messages
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-palegreen">
+                                                        <a aria-expanded="false" data-toggle="tab" id="counselor-contacttab" href="#counselor-notes">
+                                                            <i class="fa fa-sticky-note-o"></i> Notes
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+
+
+
+
+                                                <div class="tab-content tabs-flat">
+
+                                                    <div id="counselor-messages" class="tab-pane animated fadeInDown">
+                                                        <div class="row">
+                                                            <!--messages-->
+                                                            <div class="col-md-12">
+                                                                <div class="chat-discussion" style="max-height:200px; overflow-y:scroll">
+                                                                    <div class=" chat-message left">
+                                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                                            <span class="message-date"> Mon Jan 26 2015 - 18:39:23 </span>
+                                                                            <span class="message-content">
+                                                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message left">
+                                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                                It uses a dictionary of over 200 Latin words.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                                It uses a dictionary of over 200 Latin words.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <!-- send message-->
+                                                                <hr />
+                                                                <div class="chat-message-form">
+                                                                    <form class="chat-input">
+                                                                        <div class="input-group add-on">
+                                                                            <input class="chat-input-box" placeholder="Send a message..." id="srch-term" type="text">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-default chat-button">Send</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div id="counselor-notes" class="tab-pane animated fadeInDown collapse">
+                                                        <div class="row">
+                                                            <!--notes-->
+                                                            <div class="col-md-12">
+                                                                <div class="feed-activity-list" style="max-height:200px; overflow-y:scroll">
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/m2.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Michael Smith </strong> added note. <br>
+                                                                            <small class="text-muted">2 Weeks ago 5:20 pm - 10.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/f9.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Kim Ryder</strong> added note. <br>
+                                                                            <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/f9.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Kim Ryder</strong> added note. <br>
+                                                                            <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                                <!-- add note-->
+                                                                <hr />
+                                                                <div class="chat-message-form">
+                                                                    <form class="chat-input">
+                                                                        <div class="input-group add-on">
+                                                                            <input class="chat-input-box" placeholder="Add note..." id="srch-term" type="text">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-default chat-button">Add Note</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <!--<a href="" class="btn btn-palegreen btn-sm" data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Discard"><i class="fa fa-times"></i> Cancel</a>-->
+                    <a href="" class="btn btn-white btn-sm pull-right " data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Ok"><i class="fa fa-reply"></i> Ok</a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/plugins/jquery.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+
+
+    <!--<script src="js/plugins/easypiechart-init.js"></script>-->
+    <script src="js/plugins/jquery.countTo.js"></script>
+    <script src="js/plugins/toastr.js"></script>
+    <script src="js/plugins/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins/jquery.easing.min.js"></script>
+    <script src="js/plugins/jquery.easypiechart.js"></script>
+    <script src="js/onramp-main-menu.js"></script>
+    <script src="js/onramp-counselor-view.js"></script>
+
+    <script>
+    $(function () {
+        $('#cardListContainer').slimScroll({
+            height: '240'
+        });
+
+
+
+    });
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,969 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/vendor/animate.css" rel="stylesheet">
+    <!--<link href="css/vendor/fullcalendar.print.css" rel="stylesheet">-->
+    <link href="css/vendor/fullcalendar.min.css" rel="stylesheet">
+    <link href="css/vendor/metisMenu.min.css" rel="stylesheet">
+    <link href="css/main-style.css" rel="stylesheet">
+    <link href="css/dashboard-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="" class="darkmuteblue-bg">
+        <!--start bread crumb-->
+        <div class="row wrapper border-bottom darkmuteblue-bg page-heading">
+            <div class="col-lg-10">
+                <h2>OnRamp</h2>
+                <ol class="breadcrumb">
+                    <li class="active">
+                        <a href="inbox.html"><strong>Dashboard</strong></a>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </div>
+    <!--end bread crumb-->
+    <!-- start main content wrapper-->
+
+    <div class="row ng-scope">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight ng-scope" ng-controller="draggablePanels">
+            <div class="row" id="sortable-view">
+                <div class="col-lg-4 connectpanels ng-isolate-scope ui-sortable" ui-sortable="sortableOptions">
+
+                    <!--progress complete-->
+                    <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5><i class="panel-title-icon fa fa-pie-chart"></i> Progress</h5> <span class="label label-info">Updated!</span>
+                                <div class="ng-scope" ibox-tools-full-screen="">
+                                    <div class="ibox-tools dropdown" dropdown="">
+                                        <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                        <a ng-click="fullscreen()">
+                                            <i class="fa fa-compress"></i>
+                                        </a>
+                                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li>
+                                                <a href="">Config option 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <span id="goal-chart" class="chart" data-percent="56">
+                                        <span class="percent">56</span>
+                                        <canvas width="150" height="150" style="width: 160px; height: 160px;"></canvas>
+                                    </span>
+                                    <h4>
+                                        NYS report new data!
+                                        <br>
+                                        <small class="m-r"><a ui-sref="flot_chart"> View Goal Details </a></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!--followers-->    
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="panel-title-icon fa fa-check"></i> Followers</h5><span class="label label-warning-light">2 New Followers</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content no-padding">
+                            <ul class="list-group">
+                                <!-- follow user-->
+                                <li class="list-group-item">
+                                    <a class="pull-left">
+                                        <img class="img-circle follower-avatar available" src="images/avatars/f1.jpg">                                        
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-info btn-rounded pull-right btn-outline">Follow</a>
+                                    <p><a class="text-info" href="">@Alan Marry</a> Started Following you.</p>
+                                    <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>																
+                                </li>
+
+                                <!-- follow user-->
+                                <li class="list-group-item">
+                                    <a class="pull-left">
+                                        <img class="img-circle follower-avatar available" src="images/avatars/m1.jpg">
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-info btn-rounded pull-right btn-outline">Follow</a>
+                                    <p><a class="text-info" href="">@Stock Man</a> Started Following you.</p>
+                                    <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                </li>
+
+                                <!-- follow user-->
+                                <li class="list-group-item">
+                                    <a class="pull-left">
+                                        <img class="img-circle follower-avatar available" src="images/avatars/f2.jpg">
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-info btn-rounded pull-right">Following</a>
+                                    <p>You Started Following <a class="text-info" href="">@Stacey Vale</a></p>
+                                    <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                </li>
+
+                                <!-- follow user-->
+                                <li class="list-group-item">
+                                    <a class="pull-left">
+                                        <img class="img-circle follower-avatar available" src="images/avatars/m9.jpg">
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-info btn-rounded pull-right btn-outline">Follow</a>
+                                    <p><a class="text-info" href="">@Jonathan Febrick<</a> Started Following you.</p>
+                                    <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                </li>
+
+                                <!-- follow user-->
+                                <li class="list-group-item">
+                                    <a class="pull-left">
+                                        <img class="img-circle follower-avatar available" src="images/avatars/f6.jpg">
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-info btn-rounded pull-right">Following</a>
+                                    <p>You Started Following <a class="text-info" href="">@Mary Bits</a></p>
+                                    <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--timeline-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="panel-title-icon fa fa-clock-o"></i> Timeline</h5> <span class="label label-info">Updated!</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content inspinia-timeline">
+
+                            <div class="timeline">
+                                <!-- Timeline header -->
+                                <div class="tl-header now bg-primary">Present</div>
+
+                                <div class="tl-entry">
+                                    <div class="tl-time">
+                                        1h ago
+                                    </div>
+                                    <div class="tl-icon bg-warning"><i class="fa fa-envelope"></i></div>
+                                    <div class="panel tl-body">
+                                        <h4 class="text-warning">Lorem ipsum dolor sit amet</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+
+                                <div class="tl-entry left">
+                                    <div class="tl-time">
+                                        2h ago
+                                    </div>
+                                    <div class="tl-icon bg-success"><i class="fa fa-picture-o"></i></div>
+                                    <div class="panel tl-body">
+                                        <a href="#">John Doe</a> shared an image on <a href="#">The Gallery</a>
+                                        <div class="tl-wide text-center" style="padding: 10px;margin-top:15px;margin-bottom: 15px;background: #f1f1f1">
+                                            <img src="assets/demo/signin-bg-5.jpg" alt="" style="max-height: 150px;max-width: 100%;">
+                                        </div>
+                                        <i class="text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+
+                                <div class="tl-entry">
+                                    <div class="tl-time">
+                                        3h ago
+                                    </div>
+                                    <div class="tl-icon bg-success"><img src="assets/demo/avatars/2.jpg" alt=""></div>
+                                    <div class="panel tl-body">
+                                        <a href="#">Robert Jang</a> commented on <a href="#">The Article</a>
+                                        <div class="well well-sm" style="margin: 10px 0 0 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+
+                                <div class="tl-entry left">
+                                    <div class="tl-time">
+                                        4h ago
+                                    </div>
+                                    <div class="tl-icon bg-dark-gray"><i class="fa fa-check"></i></div>
+                                    <div class="panel tl-body">
+                                        <img src="assets/demo/avatars/5.jpg" alt="" class="rounded" style=" width: 20px;height: 20px;margin-top: -2px;">&nbsp;&nbsp;<a href="#">Denise Steiner</a> followed <a href="#">Johg Doe</a>
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+                                <!-- Timeline header -->
+                                <div class="tl-header">Last Year</div>
+
+                                <div class="tl-entry">
+                                    <div class="tl-time">
+                                        9:02 pm
+                                    </div>
+                                    <div class="tl-icon bg-info"><i class="fa fa-comment"></i></div>
+                                    <div class="panel tl-body">
+                                        <a href="#">John Doe</a> liked a comment on <a href="#">Some Article</a>
+                                        <div style="margin-top: 10px;" class="text-sm">
+                                            <img src="assets/demo/avatars/3.jpg" alt="" class="rounded" style=" width: 20px;height: 20px;margin-top: -2px;">&nbsp;&nbsp;<a href="#">Michelle Bortz</a> commented 2 days ago
+                                            <div class="well well-sm" style="margin: 6px 0 0 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                        </div>
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+
+                                <div class="tl-entry left">
+                                    <div class="tl-time">
+                                        5:47 pm
+                                    </div>
+                                    <div class="panel tl-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+
+                                <div class="tl-entry">
+                                    <div class="tl-time">
+                                        2:35 pm
+                                    </div>
+                                    <div class="tl-icon bg-danger"><i class="fa fa-heart"></i></div>
+                                    <div class="panel tl-body">
+                                        <a href="#">John Doe</a> liked <a href="#">Shop Item</a>
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+
+                                <div class="tl-entry left">
+                                    <div class="tl-time">
+                                        11:21 am
+                                    </div>
+                                    <div class="panel tl-body">
+                                        <h4 class="text-danger">Lorem ipsum dolor sit amet</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </div> <!-- / .tl-body -->
+                                </div> <!-- / .tl-entry -->
+
+                            </div>
+                        </div>
+                    </div>
+           
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <!--calendar-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="panel-title-icon fa fa-calendar"></i> Calendar</h5> <span class="label label-info">Updated!</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div>
+                                <div id="calendar">           
+                                   
+                                </div>
+                                <h4>
+                                    NYS report new data!
+                                    <br>
+                                    <small class="m-r"><a ui-sref="flot_chart"> View Event Details </a></small>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--daily feed-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="panel-title-icon fa fa-rss"></i> Feeds</h5> <span class="label label-warning-light">10 New Feeds!</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <div>
+                                <div class="feed-activity-list">
+
+                                    <div class="feed-element">
+                                        <a ui-sref="profile" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/profile.jpg">
+                                        </a>
+
+                                        <div class="media-body ">
+                                            <small class="pull-right">5m ago</small>
+                                            <strong>Monica Smith</strong> posted a new blog. <br>
+                                            <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="feed-element">
+                                        <a ui-sref="profile" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/a2.jpg">
+                                        </a>
+
+                                        <div class="media-body ">
+                                            <small class="pull-right">2h ago</small>
+                                            <strong>Mark Johnson</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                            <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
+                                        </div>
+                                    </div>
+                                    <div class="feed-element">
+                                        <a ui-sref="profile" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/a3.jpg">
+                                        </a>
+
+                                        <div class="media-body ">
+                                            <small class="pull-right">2h ago</small>
+                                            <strong>Janet Rosowski</strong> add 1 photo on <strong>Monica Smith</strong>. <br>
+                                            <small class="text-muted">2 days ago at 8:30am</small>
+                                        </div>
+                                    </div>
+                                    <div class="feed-element">
+                                        <a ui-sref="profile" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/a4.jpg">
+                                        </a>
+
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">5h ago</small>
+                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                            <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                            <div class="actions">
+                                                <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                                <a class="btn btn-xs btn-white"><i class="fa fa-heart"></i> Love</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feed-element">
+                                        <a ui-sref="profile" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/a5.jpg">
+                                        </a>
+
+                                        <div class="media-body ">
+                                            <small class="pull-right">2h ago</small>
+                                            <strong>Kim Smith</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                            <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                            <div class="well">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                            </div>
+                                            <div class="pull-right">
+                                                <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feed-element">
+                                        <a ui-sref="profile" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/profile.jpg">
+                                        </a>
+
+                                        <div class="media-body ">
+                                            <small class="pull-right">23h ago</small>
+                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                            <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                    <div class="feed-element">
+                                        <a ui-sref="profile" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/a7.jpg">
+                                        </a>
+
+                                        <div class="media-body ">
+                                            <small class="pull-right">46h ago</small>
+                                            <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> Show More</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--messages-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="panel-title-icon fa fa-envelope-o"></i> Messages</h5><span class="label label-warning-light">5 New Messages</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content ibox-heading">
+                            <h3><i class="fa fa-envelope-o"></i> New messages</h3>
+                            <small><i class="fa fa-tim"></i> You have 22 new messages and 16 waiting in draft folder.</small>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="feed-activity-list">
+
+                                <div class="feed-element">
+                                    <div>
+                                        <small class="pull-right text-navy">1m ago</small>
+                                        <strong>Monica Smith</strong>
+
+                                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+                                        <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                    </div>
+                                </div>
+
+                                <div class="feed-element">
+                                    <div>
+                                        <small class="pull-right">2m ago</small>
+                                        <strong>Jogn Angel</strong>
+
+                                        <div>There are many variations of passages of Lorem Ipsum available</div>
+                                        <small class="text-muted">Today 2:23 pm - 11.06.2014</small>
+                                    </div>
+                                </div>
+
+                                <div class="feed-element">
+                                    <div>
+                                        <small class="pull-right">5m ago</small>
+                                        <strong>Jesica Ocean</strong>
+
+                                        <div>Contrary to popular belief, Lorem Ipsum</div>
+                                        <small class="text-muted">Today 1:00 pm - 08.06.2014</small>
+                                    </div>
+                                </div>
+
+                                <div class="feed-element">
+                                    <div>
+                                        <small class="pull-right">5m ago</small>
+                                        <strong>Monica Jackson</strong>
+
+                                        <div>The generated Lorem Ipsum is therefore</div>
+                                        <small class="text-muted">Yesterday 8:48 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+
+
+                                <div class="feed-element">
+                                    <div>
+                                        <small class="pull-right">5m ago</small>
+                                        <strong>Anna Legend</strong>
+
+                                        <div>All the Lorem Ipsum generators on the Internet tend to repeat</div>
+                                        <small class="text-muted">Yesterday 8:48 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+                                <div class="feed-element">
+                                    <div>
+                                        <small class="pull-right">5m ago</small>
+                                        <strong>Damian Nowak</strong>
+
+                                        <div>The standard chunk of Lorem Ipsum used</div>
+                                        <small class="text-muted">Yesterday 8:48 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+                                <div class="feed-element">
+                                    <div>
+                                        <small class="pull-right">5m ago</small>
+                                        <strong>Gary Smith</strong>
+
+                                        <div>200 Latin words, combined with a handful</div>
+                                        <small class="text-muted">Yesterday 8:48 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+         
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <!--gpa-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="panel-title-icon fa fa-line-chart"></i> GPA</h5> <span class="label label-info">Updated!</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div>
+                                <div>
+
+                                    <canvas id="gpa-line-chart" width="400" height="200"></canvas>
+                                    <!--<canvas id="gpa-line-chart" style="width: 752px; height: 350px;" width="752" class="ng-isolate-scope" linechart="" data="chart.lineData" height="350" responsive="true"></canvas>-->
+                                </div>
+                                <h4>
+                                    NYS report new data!
+                                    <br>
+                                    <small class="m-r"><a ui-sref="flot_chart"> View GPA Details </a></small>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--meetings-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="panel-title-icon fa fa-share-alt"></i> Meetings</h5><span class="label label-warning-light">2 New Meetings</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content ibox-heading">
+                            <h3>You have meeting today!</h3>
+                            <small><i class="fa fa-map-marker"></i> Meeting is on 6:00am. Check your schedule to see detail.</small>
+                        </div>
+                        <div class="ibox-content inspinia-timeline">
+
+                            <div class="timeline-item">
+                                <div class="row">
+                                    <div class="col-xs-3 date">
+                                        <i class="fa fa-briefcase"></i>
+                                        6:00 am
+                                        <br>
+                                        <small class="text-navy">2 hour ago</small>
+                                    </div>
+                                    <div class="col-xs-7 content no-top-border">
+                                        <p class="m-b-xs"><strong>Meeting</strong></p>
+
+                                        <p>
+                                            Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the
+                                            sale.
+                                        </p>
+
+                                        <p><line-chart class="ng-isolate-scope" data="main.LineChart.data" options="main.LineChart.options"><span style="display: none;" class="">5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7</span><svg width="64" height="16" class="peity"><polygon points="0 15 0 7.166666666666666 2.4615384615384617 0.5 4.923076923076923 3.833333333333332 7.384615384615385 10.5 9.846153846153847 7.166666666666666 12.307692307692308 12.166666666666666 14.76923076923077 7.166666666666666 17.230769230769234 10.5 19.692307692307693 0.5 22.153846153846153 5.5 24.615384615384617 7.166666666666666 27.07692307692308 0.5 29.53846153846154 8.833333333333332 32 3.833333333333332 34.46153846153847 10.5 36.92307692307693 12.166666666666666 39.38461538461539 0.5 41.84615384615385 2.166666666666666 44.30769230769231 3.833333333333332 46.769230769230774 8.833333333333332 49.23076923076923 7.166666666666666 51.69230769230769 13.833333333333334 54.15384615384616 12.166666666666666 56.61538461538462 0.5 59.07692307692308 7.166666666666666 61.53846153846154 8.833333333333332 64 3.833333333333332 64 15" fill="#1ab394"></polygon><polyline stroke-linecap="square" stroke-width="1" stroke="#169c81" points="0 7.166666666666666 2.4615384615384617 0.5 4.923076923076923 3.833333333333332 7.384615384615385 10.5 9.846153846153847 7.166666666666666 12.307692307692308 12.166666666666666 14.76923076923077 7.166666666666666 17.230769230769234 10.5 19.692307692307693 0.5 22.153846153846153 5.5 24.615384615384617 7.166666666666666 27.07692307692308 0.5 29.53846153846154 8.833333333333332 32 3.833333333333332 34.46153846153847 10.5 36.92307692307693 12.166666666666666 39.38461538461539 0.5 41.84615384615385 2.166666666666666 44.30769230769231 3.833333333333332 46.769230769230774 8.833333333333332 49.23076923076923 7.166666666666666 51.69230769230769 13.833333333333334 54.15384615384616 12.166666666666666 56.61538461538462 0.5 59.07692307692308 7.166666666666666 61.53846153846154 8.833333333333332 64 3.833333333333332" fill="transparent"></polyline></svg></line-chart></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="row">
+                                    <div class="col-xs-3 date">
+                                        <i class="fa fa-file-text"></i>
+                                        7:00 am
+                                        <br>
+                                        <small class="text-navy">3 hour ago</small>
+                                    </div>
+                                    <div class="col-xs-7 content">
+                                        <p class="m-b-xs"><strong>Send documents to Mike</strong></p>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="row">
+                                    <div class="col-xs-3 date">
+                                        <i class="fa fa-coffee"></i>
+                                        8:00 am
+                                        <br>
+                                    </div>
+                                    <div class="col-xs-7 content">
+                                        <p class="m-b-xs"><strong>Coffee Break</strong></p>
+
+                                        <p>
+                                            Go to shop and find some products.
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="row">
+                                    <div class="col-xs-3 date">
+                                        <i class="fa fa-phone"></i>
+                                        11:00 am
+                                        <br>
+                                        <small class="text-navy">21 hour ago</small>
+                                    </div>
+                                    <div class="col-xs-7 content">
+                                        <p class="m-b-xs"><strong>Phone with Jeronimo</strong></p>
+
+                                        <p>
+                                            Lorem Ipsum has been the industry's standard dummy text ever since.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="row">
+                                    <div class="col-xs-3 date">
+                                        <i class="fa fa-user-md"></i>
+                                        09:00 pm
+                                        <br>
+                                        <small>21 hour ago</small>
+                                    </div>
+                                    <div class="col-xs-7 content">
+                                        <p class="m-b-xs"><strong>Go to the doctor dr Smith</strong></p>
+
+                                        <p>
+                                            Find some issue and go to doctor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="row">
+                                    <div class="col-xs-3 date">
+                                        <i class="fa fa-comments"></i>
+                                        12:50 pm
+                                        <br>
+                                        <small class="text-navy">48 hour ago</small>
+                                    </div>
+                                    <div class="col-xs-7 content">
+                                        <p class="m-b-xs"><strong>Chat with Monica and Sandra</strong></p>
+
+                                        <p>
+                                            Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--activity-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="fa fa-fire"></i> Activity Feed</h5><span class="label label-warning-light">5 New Activities</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content ibox-heading">
+                            <h3>You have had new activity today!</h3>
+                            <small><i class="fa fa-map-marker"></i>  You have had new activities since you last logged in. </small>
+                        </div>
+                        <div class="ibox-content">
+
+                            <div style="overflow: hidden; width: auto; height: 410px;" class="widget-content">
+                                <ul class="list-unstyled activity-list">
+                                    <li>
+                                        <i class="fa fa-check activity-icon pull-left icon-success"></i>
+                                        <p>All project tasks are on schedule <span class="timestamp">2 minutes ago</span></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-circle activity-icon pull-left icon-success"></i>
+                                        <p>The system is running well, no error found. <span class="timestamp">4 minutes ago</span></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-unlock activity-icon pull-left icon-danger"></i>
+                                        <p>You have unsecure file permission on this project. Go to <a href="">File Manager</a> to fix it <span class="timestamp">15 minutes ago</span></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bug activity-icon pull-left icon-info"></i>
+                                        <p>New <a href="#">bug report</a> has been submitted <span class="timestamp">1 hour ago</span></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-close activity-icon pull-left icon-danger"></i>
+                                        <p>Background job <a href="#">#783458</a> has failed. See the <a href="#">logs</a> <span class="timestamp">3 hour ago</span></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-flag activity-icon pull-left icon-success"></i>
+                                        <p>Project <a href="#">Social Boost</a> has been flagged as finished <span class="timestamp">Yesterday</span></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-print activity-icon pull-left icon-warning"></i>
+                                        <p>You have <a href="#">pending documents</a> on the printer server <span class="timestamp">Yesterday</span></p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-clean center-block"><i class="fa fa-refresh"></i> Load more</button>
+                            </div> 
+
+                        </div>
+                    </div>
+
+                    <!--tasks-->
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="fa fa-tasks"></i> Tasks</h5><span class="label label-warning-light">2 New Tasks</span>
+                            <div class="ng-scope" ibox-tools-full-screen="">
+                                <div class="ibox-tools dropdown" dropdown="">
+                                    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+                                    <a ng-click="fullscreen()">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+                                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" href="" dropdown-toggle="">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content ibox-heading">
+                            <h3>You have had new tasks today!</h3>
+                            <small><i class="fa fa-map-marker"></i>  You have had new tasks since you last logged in. </small>
+                        </div>
+                        <div class="ibox-content">
+
+                            <div class="panel widget-tasks">
+                                <!-- Without vertical padding -->
+                                <div class="panel-body no-padding-vr ui-sortable">
+
+                                    <div class="task">
+                                        <span class="label label-warning pull-right">High</span>
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">A very important task<span>1 hour left</span></a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task completed">
+                                        <span class="label label-warning pull-right">High</span>
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" checked="checked" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">A very important task<span>58 minutes left</span></a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task completed">
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" checked="checked" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">A regular task</a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task">
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">A regular task</a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task">
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">A regular task</a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task">
+                                        <span class="label pull-right">Low</span>
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">An unimportant task</a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task">
+                                        <span class="label pull-right">Low</span>
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">An unimportant task</a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task">
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">A regular task</a>
+                                    </div> <!-- / .task -->
+
+                                    <div class="task">
+                                        <span class="label pull-right">Low</span>
+                                        <div class="fa fa-arrows-v task-sort-icon"></div>
+                                        <div class="action-checkbox">
+                                            <label class="px-single"><input name="" value="" class="px" type="checkbox"><span class="lbl"></span></label>
+                                        </div>
+                                        <a href="#" class="task-title">An unimportant task</a>
+                                    </div> <!-- / .task -->
+                                </div> <!-- / .panel-body -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+			
+    	
+            <!-- end main content wrapper-->
+            <!-- Mainly scripts -->
+            <script src="js/plugins/jquery.min.js"></script>
+            <script src="js/plugins/bootstrap.min.js"></script>
+            
+            <!-- Custom and plugin javascript -->
+            <script src="js/plugins/jquery.metisMenu.js"></script>
+            <script src="js/plugins/jquery.slimscroll.min.js"></script>           
+            <script src="js/plugins/jquery.easing.min.js"></script>
+            <script src="js/plugins/jquery.easypiechart.js"></script>
+
+            <script src="js/plugins/moment.min.js"></script>
+            <script src="js/plugins/Chart.bundle.js"></script>
+            <script src="js/plugins/fullcalendar.js"></script>
+
+            <script src="js/dashboard-script.js"></script>
+
+
+
+</body>
+</html>

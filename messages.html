@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onramp Messages</title>
+    <link rel="icon" href="images/pathways-color-icon.png">
+
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/editor.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery-ui-min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery.tagit.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-main-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/message-style.css" rel="stylesheet" type="text/css">
+
+</head>
+    <body id="skin-blur-lights">
+
+        <!-- MAIN HEADER TOOLBAR-->
+        <!-- Header -->
+        <header class="l-header">
+
+            <!-- Logo -->
+            <a href="" class="b-logo">
+                <img src="images/logo.png" alt="My Path">
+            </a>
+            <!-- /Logo -->
+
+            <div class="b-sidebar">
+
+                <div class="b-sidebar__overlay"></div>
+
+                <a href="" class="b-sidebar__toggler">
+                    <img src="assets/img/menu.svg" alt="">
+                </a>
+
+                <div class="b-sidebar__content">
+
+                    <!-- Topbar -->
+                    <div class="b-topbar bg-black">
+
+                        <!-- User panel -->
+                        <div class="b-user-panel">
+                            <div class="b-user-panel__info">
+                                <a href="" class="b-user-panel__name">Alexandra Williams</a>
+                                <div class="b-user-panel__pict">
+                                    <img src="images/avatars/f3.jpg" class="img-circle avatar-height-30" alt="Alexandra Williams">
+                                </div>
+                            </div>
+                            <ul class="b-user-panel__menu animated fadeInUp">
+                                <li class="b-user-panel__menu-item">
+                                    <a href=""><i class="fa fa-user margin-right-5"></i> Profile</a>
+                                </li>
+                                <li class="b-user-panel__menu-item">
+                                    <a href=""><i class="fa fa-question-circle margin-right-5"></i> Help</a>
+                                </li>
+                                <li class="b-user-panel__menu-item">
+                                    <a href=""><i class="fa fa-sign-out margin-right-5"></i> Sign Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /User panel -->
+                        <!-- Notifications -->
+                         <div class="b-notifications">
+                            <a href="" class="b-notifications__icon">
+                                <span class="b-notifications__icon-text">
+                                    Notifications
+                                </span>
+                                <span class="b-notifications__icon-picture">
+                                    <i class="fa fa-envelope-o" style="font-size:20px;"></i>
+                                    <span class="b-notifications__count">153</span>
+                                </span>
+                            </a>                            
+                        </div> 
+                        <!-- /Notifications -->
+                        <!-- Search form -->
+                        <!-- <form class="b-search-form">
+                            <input type="text" class="b-search-form__input" placeholder="Search...">
+                            <button type="submit" class="b-search-form__button"></button>
+                        </form> -->
+                        <!-- /Search form -->
+                        <!-- skin changer modal-->
+                        <div style="display:none;" class="modal fade in" id="changeSkin" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h4 class="modal-title">Change Template Skin</h4></div>
+                                    <div class="modal-body">
+                                        <div class="row template-skins">
+                                            <a data-skin="skin-blur-violate" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-violate.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-lights" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-lights.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-city" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-city.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-greenish" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-greenish.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-night" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-night.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-blue" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-blue.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-sunny" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-sunny.jpg" alt="">
+
+                                            </a><a data-skin="skin-retro-burn" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-retro-burn.jpg" alt="">
+
+                                            </a><a data-skin="skin-tectile" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-tectile.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-chrome" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-chrome.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-ocean" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-ocean.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-sunset" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-sunset.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-yellow" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-yellow.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-kiwi" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-kiwi.jpg" alt="">
+
+                                            </a><a data-skin="skin-blur-nexus" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-nexus.jpg" alt="">
+                                            </a>
+                                            <a data-skin="skin-blur-summer-bokeh" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-summer-bokeh.jpg" alt="">
+                                            </a>
+                                            <a data-skin="skin-blur-spring-bokeh" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-spring-bokeh.jpg" alt="">
+                                            </a>
+                                            <a data-skin="skin-blur-chalkboard" class="col-sm-2 col-xs-4" href="">
+                                                <img src="images/skins/skin-chalkboard.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- skin changer modal-->
+
+                    </div>
+                    <!-- /Topbar -->
+                    <!-- Menu -->
+
+                    <nav class="b-menu bg_opacity60">
+
+                        <div class="col-lg-6">
+                            <ul class="b-menu__list ">
+                                <li class="b-menu__list-item -active-item">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">OnRamp</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="">Dashboard</a>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="">Highschools</a>
+                                            <ul class="dropdown-menu">
+                                                <li> <a href="">Highschool 1</a> </li>
+                                                <li> <a href="">Highschool 2</a> </li>
+                                                <li> <a href="">Highschool 3</a> </li>
+                                                <li> <a href="">Highschool 4</a> </li>
+                                                <li> <a href="">Highschool 5</a> </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="b-menu__list-item">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Analytics</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li> <a href="">Dashboard</a> </li>
+                                        <li> <a href="">Search</a> </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="">Quick Search</a>
+                                            <ul class="dropdown-menu">
+                                              
+                                                <li>
+                                                    <a>
+                                                        <form role="search" class="" action="#">
+                                                            <div id="search">
+                                                                <input class="" placeholder="Search..." type="text"><button data-original-title="Search" type="submit" class="tip-right" title=""><i class="fa fa-search"></i></button>
+                                                            </div>
+                                                        </form>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="b-menu__list-item">
+                                    <a href="">Outreach</a>
+                                </li>
+                                <li class="b-menu__list-item">
+                                    <a href="">Pathways</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <a id="settings" data-toggle="modal" href="#changeSkin"><i class="fa fa-cog margin-right-5 "></i> Change Skin</a>
+                        </div>
+
+                    </nav>
+
+
+                    <!-- /Menu -->
+
+                </div>
+            </div>
+
+        </header>
+        <!-- /Header -->
+        <!-- MAIN HEADER TOOLBAR-->
+        <!-- start main content wrapper-->
+        <!-- bread crumb-->
+        <ol class="breadcrumb animated fadeInRight">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+                <a>Messages</a>
+            </li>
+        </ol>
+        <!--bread crumb-->
+        <!-- start main content wrapper-->
+
+        <div class="wrapper wrapper-content animated fadeInRight">
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="ibox chat-view bg_opacity35">
+
+                        <div class="ibox-title bg_opacity35">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#newMessageModal">Create New Message</button>
+                            <small class="pull-right text-muted">Last message:  Mon June 26 2016 - 18:39:23</small>
+                        </div>
+
+
+                        <div class="ibox-content bg_opacity35">
+
+                            <div class="row ">
+                                <!-- chat conversations-->
+                                <div class="col-md-3">
+                                    <div class="chat-users animated fadeInLeft">
+                                        <div id="users-list" class="users-list">
+                                            <!--existing chat conversations-->
+                                            <div class="chat-user">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar available" src="images/avatars/m1.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Karl Jordan</a><span>June 18</span>
+                                                    </div>
+                                                    <span class="badge badge-danger pull-right">5</span>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">Hey! Whats up?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chat-user">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar available" src="images/avatars/f6.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Monica Smith</a><span>June 18</span>
+                                                    </div>
+                                                    <span class="badge badge-danger pull-right">1</span>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">So the last class ends when?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chat-user active">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar signedoff" src="images/avatars/m2.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Michael Smith</a><span>June 18</span>
+                                                    </div>
+                                                    <span class="badge badge-danger pull-right">10</span>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">OK perfect , next week works perfectly!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chat-user">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar busy" src="images/avatars/f2.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Janet Cohen</a><span>June 18</span>
+                                                    </div>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">OK perfect , next week works perfectly!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chat-user">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar available" src="images/avatars/f3.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Alice Staple</a><span>June 18</span>
+                                                    </div>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">OK perfect , next week works perfectly!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chat-user">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar available" src="images/avatars/f8.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Monica Cale</a><span>June 18</span>
+                                                    </div>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">OK perfect , next week works perfectly!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chat-user">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar signedoff" src="images/avatars/m5.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Mark Jordan</a><span>June 18</span>
+                                                    </div>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">OK perfect , next week works perfectly!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chat-user">
+                                                <div class="chat-user-container">
+                                                    <img class="img-circle chat-avatar busy" src="images/avatars/f4.jpg" alt="">
+                                                    <span class="badge badge-online pull-left"></span>
+                                                    <div class="chat-user-name">
+                                                        <a href="#">Jen Applesmith</a><span>June 18</span>
+                                                    </div>
+                                                    <div class="chat-user-last-message">
+                                                        <p href="#">OK perfect , next week works perfectly!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </div>
+                                        </div>
+                                            <!--chat messages-->
+                                            <div class="col-md-9">
+                                                <div id="chat-discussion" class="chat-discussion bg_opacity">
+                                                    <div class="chat-message left">
+                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                            <span class="message-date"> Mon Jan 26 2015 - 18:39:23 </span>
+                                                            <span class="message-content">
+                                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chat-message right">
+                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> John Doe </a>
+                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                            <span class="message-content">
+                                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chat-message right">
+                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> John Doe </a>
+                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                            <span class="message-content">
+                                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chat-message left">
+                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                            <span class="message-content">
+                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                It uses a dictionary of over 200 Latin words.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chat-message right">
+                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> John Doe </a>
+                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                            <span class="message-content">
+                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                It uses a dictionary of over 200 Latin words.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chat-message right">
+                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> John Doe </a>
+                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                            <span class="message-content">
+                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                It uses a dictionary of over 200 Latin words.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chat-message right">
+                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> John Doe </a>
+                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                            <span class="message-content">
+                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                It uses a dictionary of over 200 Latin words.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chat-message right">
+                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                        <div class="message">
+                                                            <a class="message-author" href="#"> John Doe </a>
+                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                            <span class="message-content">
+                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                It uses a dictionary of over 200 Latin words.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- send message-->
+                                                <hr />
+                                                <div class="chat-message-form">
+                                                    <form class="chat-input">
+                                                        <div class="input-group">
+                                                            <input class="chat-input-box" placeholder="Send a message..." id="chat-msg" type="text">
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default chat-button">Send</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        </div>
+                                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+
+
+        <div style="display: none;" class="modal inmodal fade" id="newMessageModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">New Message</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" method="POST" name="email_to_form">
+                            <!-- begin email to -->
+                            <label class="control-label">To:</label>
+                            <div class="m-b-15">
+                                <ul id="email-to">
+                                    <li>samsmith</li>
+                                    <li>sarareese</li>
+                                    <li>janedoe@abc.com</li>
+                                </ul>
+                            </div>
+                            <!-- end email to -->
+                            <!-- begin email subject -->
+                            <label class="control-label">Subject:</label>
+                            <div class="m-b-15">
+                                <input class="form-control" type="text">
+                            </div>
+                            <!-- end email subject -->
+
+
+                            <div class="ibox-content no-padding">
+
+
+                                <label class="control-label">Message:</label>
+                                <div class="m-b-15">
+                                    <textarea id="newMessageContent" placeholder="Type message here" style="background-color: rgb(255, 255, 255); color: rgb(85, 85, 85); cursor: text; " spellcheck="true" class="textarea form-control placeholder" contenteditable="true"></textarea>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <a href="" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Discard email"><i class="fa fa-times"></i> Discard</a>
+                                    <a href="" id="sendMessage" class="btn btn-sm btn-white" data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Send"><i class="fa fa-reply"></i> Send</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end main content wrapper-->
+        <!-- Mainly scripts -->
+        <script src="js/plugins/jquery.min.js"></script>
+        <script src="js/plugins/jquery-ui.min.js"></script> 
+        <script src="js/plugins/bootstrap.min.js"></script>
+        <script src="js/plugins/editor.js"></script>
+
+        <script>
+        $(function () {
+            $('#users-list').slimScroll({
+                height: 'auto'
+            });
+
+            
+
+        });
+
+        $(function () {
+            $('#chat-discussion').slimScroll({
+                height: 'auto'
+            });
+
+          });
+        </script>
+
+        <!-- Custom and plugin javascript -->
+        <script src="js/plugins/tag-it.js"></script>
+        <script src="js/plugins/toastr.js"></script>
+        <script src="js/plugins/jquery.slimscroll.min.js"></script>
+        <script src="js/onramp-main-menu.js"></script>
+        <script src="js/messages.js"></script>
+    </body>
+</html>

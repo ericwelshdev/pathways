@@ -1,0 +1,848 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-JU5MJNK</Machine>
+    <WindowsUser>Admin</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>321211f2-6834-43d0-aa36-a63f4a298728</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\calendar.html">
+      <PackagePath>calendar.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\dashboard-example.html">
+      <PackagePath>dashboard-example.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\dashboard-student.html">
+      <PackagePath>dashboard-student.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\dashboard-v2.html">
+      <PackagePath>dashboard-v2.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\dashboard.html">
+      <PackagePath>dashboard.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\forgotpassword.html">
+      <PackagePath>forgotpassword.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\inbox.html">
+      <PackagePath>inbox.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\merge-main.html">
+      <PackagePath>merge-main.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\onramp-index.html">
+      <PackagePath>onramp-index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\login.html">
+      <PackagePath>login.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\messages.html">
+      <PackagePath>messages.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\onramp-counselor-view.html">
+      <PackagePath>onramp-counselor-view.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\onramp-main.html">
+      <PackagePath>onramp-main.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\onramp-student-profile.html">
+      <PackagePath>onramp-student-profile.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\onramp-student-view.html">
+      <PackagePath>onramp-student-view.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\progress-timeline.html">
+      <PackagePath>progress-timeline.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\register.html">
+      <PackagePath>register.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\calendar-style.css">
+      <PackagePath>css\calendar-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\dashboard-style.css">
+      <PackagePath>css\dashboard-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\dashboard-v2.css">
+      <PackagePath>css\dashboard-v2.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\font-awesome.css">
+      <PackagePath>css\font-awesome.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\font-awesome.min.css">
+      <PackagePath>css\font-awesome.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\forgotpassword.css">
+      <PackagePath>css\forgotpassword.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\merge-main.css">
+      <PackagePath>css\merge-main.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\onramp-index.css">
+      <PackagePath>css\onramp-index.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\login.css">
+      <PackagePath>css\login.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\main-style.css">
+      <PackagePath>css\main-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\message-style.css">
+      <PackagePath>css\message-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\onramp-main-menu.css">
+      <PackagePath>css\onramp-main-menu.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\onramp-main-style.css">
+      <PackagePath>css\onramp-main-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\onramp-student-profile.css">
+      <PackagePath>css\onramp-student-profile.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\onramp-counselor-view-style.css">
+      <PackagePath>css\onramp-counselor-view-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\onramp-student-view-style.css">
+      <PackagePath>css\onramp-student-view-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\progress-timeline.css">
+      <PackagePath>css\progress-timeline.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\register.css">
+      <PackagePath>css\register.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\summernote.css">
+      <PackagePath>css\summernote.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\animate.css">
+      <PackagePath>css\vendor\animate.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap-switch.css">
+      <PackagePath>css\vendor\bootstrap-switch.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap-switch.min.css">
+      <PackagePath>css\vendor\bootstrap-switch.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap-toggle.css">
+      <PackagePath>css\vendor\bootstrap-toggle.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap-toggle.min.css">
+      <PackagePath>css\vendor\bootstrap-toggle.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap-wysihtml5.css">
+      <PackagePath>css\vendor\bootstrap-wysihtml5.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap.css">
+      <PackagePath>css\vendor\bootstrap.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap.min.css">
+      <PackagePath>css\vendor\bootstrap.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap2-toggle.css">
+      <PackagePath>css\vendor\bootstrap2-toggle.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\bootstrap2-toggle.min.css">
+      <PackagePath>css\vendor\bootstrap2-toggle.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\checkbox-style.css">
+      <PackagePath>css\vendor\checkbox-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\datatables.min.css">
+      <PackagePath>css\vendor\datatables.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\editor.css">
+      <PackagePath>css\vendor\editor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\font-awesome.css">
+      <PackagePath>css\vendor\font-awesome.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\font-awesome.min.css">
+      <PackagePath>css\vendor\font-awesome.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\fullcalendar.css">
+      <PackagePath>css\vendor\fullcalendar.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\fullcalendar.min.css">
+      <PackagePath>css\vendor\fullcalendar.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\fullcalendar.print.css">
+      <PackagePath>css\vendor\fullcalendar.print.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\jquery-ui-min.css">
+      <PackagePath>css\vendor\jquery-ui-min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\jquery.tagit.css">
+      <PackagePath>css\vendor\jquery.tagit.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\metisMenu.min.css">
+      <PackagePath>css\vendor\metisMenu.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\radio-style.css">
+      <PackagePath>css\vendor\radio-style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\reset-min.css">
+      <PackagePath>css\vendor\reset-min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\reset.css">
+      <PackagePath>css\vendor\reset.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\summernote-bs3.css">
+      <PackagePath>css\vendor\summernote-bs3.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\summernote.css">
+      <PackagePath>css\vendor\summernote.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\tagit.ui-zendesk.css">
+      <PackagePath>css\vendor\tagit.ui-zendesk.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\toastr.min.css">
+      <PackagePath>css\vendor\toastr.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\wysihtml5-editor.css">
+      <PackagePath>css\vendor\wysihtml5-editor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\css\vendor\wysihtml5-stylesheet.css">
+      <PackagePath>css\vendor\wysihtml5-stylesheet.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\fontawesome-webfont.eot">
+      <PackagePath>fonts\fontawesome-webfont.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>fonts\glyphicons-halflings-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-100.eot">
+      <PackagePath>fonts\roboto-v15-latin-100.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-300.eot">
+      <PackagePath>fonts\roboto-v15-latin-300.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-500.eot">
+      <PackagePath>fonts\roboto-v15-latin-500.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-regular.eot">
+      <PackagePath>fonts\roboto-v15-latin-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\summernote.eot">
+      <PackagePath>fonts\summernote.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\fontawesome-webfont.svg">
+      <PackagePath>fonts\fontawesome-webfont.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>fonts\glyphicons-halflings-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-100.svg">
+      <PackagePath>fonts\roboto-v15-latin-100.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-300.svg">
+      <PackagePath>fonts\roboto-v15-latin-300.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-500.svg">
+      <PackagePath>fonts\roboto-v15-latin-500.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-regular.svg">
+      <PackagePath>fonts\roboto-v15-latin-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\down.svg">
+      <PackagePath>images\down.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\fontawesome-webfont.ttf">
+      <PackagePath>fonts\fontawesome-webfont.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>fonts\glyphicons-halflings-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\Nexa.ttf">
+      <PackagePath>fonts\Nexa.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\NexaBold.ttf">
+      <PackagePath>fonts\NexaBold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-100.ttf">
+      <PackagePath>fonts\roboto-v15-latin-100.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-300.ttf">
+      <PackagePath>fonts\roboto-v15-latin-300.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-500.ttf">
+      <PackagePath>fonts\roboto-v15-latin-500.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-regular.ttf">
+      <PackagePath>fonts\roboto-v15-latin-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\summernote.ttf">
+      <PackagePath>fonts\summernote.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\fontawesome-webfont.woff">
+      <PackagePath>fonts\fontawesome-webfont.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-100.woff">
+      <PackagePath>fonts\roboto-v15-latin-100.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-300.woff">
+      <PackagePath>fonts\roboto-v15-latin-300.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-500.woff">
+      <PackagePath>fonts\roboto-v15-latin-500.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-regular.woff">
+      <PackagePath>fonts\roboto-v15-latin-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\summernote.woff">
+      <PackagePath>fonts\summernote.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\fontawesome-webfont.woff2">
+      <PackagePath>fonts\fontawesome-webfont.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\glyphicons-halflings-regular.woff2">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-100.woff2">
+      <PackagePath>fonts\roboto-v15-latin-100.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-300.woff2">
+      <PackagePath>fonts\roboto-v15-latin-300.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-500.woff2">
+      <PackagePath>fonts\roboto-v15-latin-500.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\roboto-v15-latin-regular.woff2">
+      <PackagePath>fonts\roboto-v15-latin-regular.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\fonts\FontAwesome.otf">
+      <PackagePath>fonts\FontAwesome.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\1194985624696670932tasto_10_architetto_fran_01.svg.med.png">
+      <PackagePath>images\1194985624696670932tasto_10_architetto_fran_01.svg.med.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\1194985626525719339tasto_11_architetto_fran_01.svg.med.png">
+      <PackagePath>images\1194985626525719339tasto_11_architetto_fran_01.svg.med.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-Black-Widow-icon.png">
+      <PackagePath>images\avatars\Avengers-Black-Widow-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-Captain-America-icon.png">
+      <PackagePath>images\avatars\Avengers-Captain-America-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-Giant-Man-icon.png">
+      <PackagePath>images\avatars\Avengers-Giant-Man-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-Hulk-icon.png">
+      <PackagePath>images\avatars\Avengers-Hulk-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-Iron-Man-icon.png">
+      <PackagePath>images\avatars\Avengers-Iron-Man-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-Loki-icon.png">
+      <PackagePath>images\avatars\Avengers-Loki-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-Thor-icon.png">
+      <PackagePath>images\avatars\Avengers-Thor-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\Avengers-War-Machine-icon.png">
+      <PackagePath>images\avatars\Avengers-War-Machine-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-panel-1.png">
+      <PackagePath>images\bg-panel-1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\Capa_1_mini.png">
+      <PackagePath>images\Capa_1_mini.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\cogwheel.png">
+      <PackagePath>images\cogwheel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\graduate-cap.png">
+      <PackagePath>images\graduate-cap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\graduate-certificate.png">
+      <PackagePath>images\graduate-certificate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\logos\foothill-hs.png">
+      <PackagePath>images\logos\foothill-hs.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\notifications.png">
+      <PackagePath>images\notifications.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\pathways-color-icon.PNG">
+      <PackagePath>images\pathways-color-icon.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\pathways-white-icon.png">
+      <PackagePath>images\pathways-white-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\red-pin.png">
+      <PackagePath>images\red-pin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\right-quote_mini.png">
+      <PackagePath>images\right-quote_mini.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\search-white.png">
+      <PackagePath>images\search-white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\search.png">
+      <PackagePath>images\search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\cloth.png">
+      <PackagePath>images\skins\cloth.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\tectile.png">
+      <PackagePath>images\skins\tectile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\slide00.png">
+      <PackagePath>images\slide00.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\slide01.png">
+      <PackagePath>images\slide01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\slide03.png">
+      <PackagePath>images\slide03.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\status-fail.png">
+      <PackagePath>images\status-fail.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\status-pass.png">
+      <PackagePath>images\status-pass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\status-question.png">
+      <PackagePath>images\status-question.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\status-red-warning.png">
+      <PackagePath>images\status-red-warning.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\status-yellow-warning.png">
+      <PackagePath>images\status-yellow-warning.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\user-default-icon.png">
+      <PackagePath>images\user-default-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\yellow-pin.png">
+      <PackagePath>images\yellow-pin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f1.jpg">
+      <PackagePath>images\avatars\f1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f10.jpg">
+      <PackagePath>images\avatars\f10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f2.jpg">
+      <PackagePath>images\avatars\f2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f3.jpg">
+      <PackagePath>images\avatars\f3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f4.jpg">
+      <PackagePath>images\avatars\f4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f5.jpg">
+      <PackagePath>images\avatars\f5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f6.jpg">
+      <PackagePath>images\avatars\f6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f7.jpg">
+      <PackagePath>images\avatars\f7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f8.jpg">
+      <PackagePath>images\avatars\f8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\f9.jpg">
+      <PackagePath>images\avatars\f9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m1.jpg">
+      <PackagePath>images\avatars\m1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m10.jpg">
+      <PackagePath>images\avatars\m10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m2.jpg">
+      <PackagePath>images\avatars\m2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m3.jpg">
+      <PackagePath>images\avatars\m3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m4.jpg">
+      <PackagePath>images\avatars\m4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m5.jpg">
+      <PackagePath>images\avatars\m5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m6.jpg">
+      <PackagePath>images\avatars\m6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m7.jpg">
+      <PackagePath>images\avatars\m7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m8.jpg">
+      <PackagePath>images\avatars\m8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\avatars\m9.jpg">
+      <PackagePath>images\avatars\m9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-bw-panel-1.jpg">
+      <PackagePath>images\bg-bw-panel-1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-bw-panel-2.jpg">
+      <PackagePath>images\bg-bw-panel-2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-bw-panel-3.jpg">
+      <PackagePath>images\bg-bw-panel-3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-bw-panel-4.jpg">
+      <PackagePath>images\bg-bw-panel-4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-panel-2.jpg">
+      <PackagePath>images\bg-panel-2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-panel-3.jpg">
+      <PackagePath>images\bg-panel-3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\bg-panel-4.jpg">
+      <PackagePath>images\bg-panel-4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\foothill-hs.jpg">
+      <PackagePath>images\foothill-hs.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\frozen-wave.jpg">
+      <PackagePath>images\frozen-wave.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\sample-user-icon.jpg">
+      <PackagePath>images\sample-user-icon.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\blue-fade.jpg">
+      <PackagePath>images\skins\blue-fade.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\blue.jpg">
+      <PackagePath>images\skins\blue.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\chalkboard.jpg">
+      <PackagePath>images\skins\chalkboard.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\city.jpg">
+      <PackagePath>images\skins\city.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\greenish.jpg">
+      <PackagePath>images\skins\greenish.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\kiwi.jpg">
+      <PackagePath>images\skins\kiwi.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\lights.jpg">
+      <PackagePath>images\skins\lights.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\nexus.jpg">
+      <PackagePath>images\skins\nexus.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\night.jpg">
+      <PackagePath>images\skins\night.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\ocean.jpg">
+      <PackagePath>images\skins\ocean.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\retro-burn.jpg">
+      <PackagePath>images\skins\retro-burn.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-blue.jpg">
+      <PackagePath>images\skins\skin-blue.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-chalkboard.jpg">
+      <PackagePath>images\skins\skin-chalkboard.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-chrome.jpg">
+      <PackagePath>images\skins\skin-chrome.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-city.jpg">
+      <PackagePath>images\skins\skin-city.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-cloth.jpg">
+      <PackagePath>images\skins\skin-cloth.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-greenish.jpg">
+      <PackagePath>images\skins\skin-greenish.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-kiwi.jpg">
+      <PackagePath>images\skins\skin-kiwi.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-lights.jpg">
+      <PackagePath>images\skins\skin-lights.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-nexus.jpg">
+      <PackagePath>images\skins\skin-nexus.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-night.jpg">
+      <PackagePath>images\skins\skin-night.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-ocean.jpg">
+      <PackagePath>images\skins\skin-ocean.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-retro-burn.jpg">
+      <PackagePath>images\skins\skin-retro-burn.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-spring-bokeh.jpg">
+      <PackagePath>images\skins\skin-spring-bokeh.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-summer-bokeh.jpg">
+      <PackagePath>images\skins\skin-summer-bokeh.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-sunny.jpg">
+      <PackagePath>images\skins\skin-sunny.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-sunset.jpg">
+      <PackagePath>images\skins\skin-sunset.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-tectile.jpg">
+      <PackagePath>images\skins\skin-tectile.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-violate.jpg">
+      <PackagePath>images\skins\skin-violate.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\skin-yellow.jpg">
+      <PackagePath>images\skins\skin-yellow.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\spring-bokeh.jpg">
+      <PackagePath>images\skins\spring-bokeh.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\summer-bokeh.jpg">
+      <PackagePath>images\skins\summer-bokeh.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\sunny.jpg">
+      <PackagePath>images\skins\sunny.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\sunset.jpg">
+      <PackagePath>images\skins\sunset.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\violate.jpg">
+      <PackagePath>images\skins\violate.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\images\skins\yellow.jpg">
+      <PackagePath>images\skins\yellow.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\merge-main.js">
+      <PackagePath>js\merge-main.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\onramp-index.js">
+      <PackagePath>js\onramp-index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\onramp-main-menu.js">
+      <PackagePath>js\onramp-main-menu.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\onramp-main-script.js">
+      <PackagePath>js\onramp-main-script.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\onramp-student-profile.js">
+      <PackagePath>js\onramp-student-profile.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap-switch.js">
+      <PackagePath>js\plugins\bootstrap-switch.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap-switch.min.js">
+      <PackagePath>js\plugins\bootstrap-switch.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap-toggle.js">
+      <PackagePath>js\plugins\bootstrap-toggle.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap-toggle.min.js">
+      <PackagePath>js\plugins\bootstrap-toggle.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap-wysiwyg.js">
+      <PackagePath>js\plugins\bootstrap-wysiwyg.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap2-toggle.js">
+      <PackagePath>js\plugins\bootstrap2-toggle.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap2-toggle.min.js">
+      <PackagePath>js\plugins\bootstrap2-toggle.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\datatables.min.js">
+      <PackagePath>js\plugins\datatables.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery-2.1.1.js">
+      <PackagePath>js\plugins\jquery-2.1.1.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.slimscroll.js">
+      <PackagePath>js\plugins\jquery.slimscroll.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\prefixfree.dynamic-dom.min.js">
+      <PackagePath>js\plugins\prefixfree.dynamic-dom.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\calendar-script.js">
+      <PackagePath>js\calendar-script.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\common.js">
+      <PackagePath>js\common.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\dashboard-student.js">
+      <PackagePath>js\dashboard-student.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\inbox.js">
+      <PackagePath>js\inbox.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\messages.js">
+      <PackagePath>js\messages.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\mypaths-script.js">
+      <PackagePath>js\mypaths-script.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\onramp-counselor-view.js">
+      <PackagePath>js\onramp-counselor-view.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\onramp-student-view.js">
+      <PackagePath>js\onramp-student-view.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\onramp-student.js">
+      <PackagePath>js\onramp-student.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\parsers\advanced.js">
+      <PackagePath>js\parsers\advanced.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\parsers\simple.js">
+      <PackagePath>js\parsers\simple.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap-wysihtml5.js">
+      <PackagePath>js\plugins\bootstrap-wysihtml5.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap.js">
+      <PackagePath>js\plugins\bootstrap.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\bootstrap.min.js">
+      <PackagePath>js\plugins\bootstrap.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\Chart.bundle.js">
+      <PackagePath>js\plugins\Chart.bundle.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\Chart.bundle.min.js">
+      <PackagePath>js\plugins\Chart.bundle.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\Chart.js">
+      <PackagePath>js\plugins\Chart.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\Chart.min.js">
+      <PackagePath>js\plugins\Chart.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\easypiechart-init.js">
+      <PackagePath>js\plugins\easypiechart-init.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\editor.js">
+      <PackagePath>js\plugins\editor.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\fullcalendar.js">
+      <PackagePath>js\plugins\fullcalendar.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\fullcalendar.min.js">
+      <PackagePath>js\plugins\fullcalendar.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery-ui.min.js">
+      <PackagePath>js\plugins\jquery-ui.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.classyloader.js">
+      <PackagePath>js\plugins\jquery.classyloader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.classyloader.min.js">
+      <PackagePath>js\plugins\jquery.classyloader.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.countTo.js">
+      <PackagePath>js\plugins\jquery.countTo.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.easing.min.js">
+      <PackagePath>js\plugins\jquery.easing.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.easypiechart.js">
+      <PackagePath>js\plugins\jquery.easypiechart.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.easypiechart.min.js">
+      <PackagePath>js\plugins\jquery.easypiechart.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.fullcalender.min.js">
+      <PackagePath>js\plugins\jquery.fullcalender.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.js">
+      <PackagePath>js\plugins\jquery.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.metisMenu.js">
+      <PackagePath>js\plugins\jquery.metisMenu.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.min.js">
+      <PackagePath>js\plugins\jquery.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.mobile.custom.min.js">
+      <PackagePath>js\plugins\jquery.mobile.custom.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\jquery.slimscroll.min.js">
+      <PackagePath>js\plugins\jquery.slimscroll.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\modernizr.js">
+      <PackagePath>js\plugins\modernizr.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\moment.min.js">
+      <PackagePath>js\plugins\moment.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\summernote.js">
+      <PackagePath>js\plugins\summernote.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\summernote.min.js">
+      <PackagePath>js\plugins\summernote.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\tag-it.js">
+      <PackagePath>js\plugins\tag-it.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\tag-it.min.js">
+      <PackagePath>js\plugins\tag-it.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\toastr.js">
+      <PackagePath>js\plugins\toastr.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\wysihtml5-0.3.0.js">
+      <PackagePath>js\plugins\wysihtml5-0.3.0.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\plugins\wysihtml5-0.3.0.min.js">
+      <PackagePath>js\plugins\wysihtml5-0.3.0.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\js\progress.js">
+      <PackagePath>js\progress.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

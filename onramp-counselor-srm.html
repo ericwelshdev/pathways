@@ -1,0 +1,1542 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onramp Counselor SRM</title>
+    <link rel="icon" href="images/pathways-color-icon.png">
+
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/editor.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/datatables.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery-ui-min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery.tagit.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-main-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-counselor-srm.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body id="skin-blur-lights">
+
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- Header -->
+    <header class="l-header">
+
+        <!-- Logo -->
+        <a href="" class="b-logo">
+            <img src="images/logo.png" alt="My Path">
+        </a>
+        <!-- /Logo -->
+
+        <div class="b-sidebar">
+
+            <div class="b-sidebar__overlay"></div>
+
+            <a href="" class="b-sidebar__toggler">
+                <img src="assets/img/menu.svg" alt="">
+            </a>
+
+            <div class="b-sidebar__content">
+
+                <!-- Topbar -->
+                <div class="b-topbar bg-black">
+
+                    <!-- User panel -->
+                    <div class="b-user-panel">
+                        <div class="b-user-panel__info">
+                            <a href="" class="b-user-panel__name">Alexandra Williams</a>
+                            <div class="b-user-panel__pict">
+                                <img src="images/avatars/f3.jpg" class="img-circle avatar-height-30" alt="Alexandra Williams">
+                            </div>
+                        </div>
+                        <ul class="b-user-panel__menu animated fadeInUp">
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-user margin-right-5"></i> Profile</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-question-circle margin-right-5"></i> Help</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-sign-out margin-right-5"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /User panel -->
+                    <!-- Notifications -->
+                    <div class="b-notifications">
+                        <a href="" class="b-notifications__icon">
+                            <span class="b-notifications__icon-text">
+                                Notifications
+                            </span>
+                            <span class="b-notifications__icon-picture">
+                                <i class="fa fa-envelope-o" style="font-size:20px;"></i>
+                                <span class="b-notifications__count">153</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- /Notifications -->
+                    <!-- Search form -->
+                    <!-- <form class="b-search-form">
+                        <input type="text" class="b-search-form__input" placeholder="Search...">
+                        <button type="submit" class="b-search-form__button"></button>
+                    </form> -->
+                    <!-- /Search form -->
+                    <!-- skin changer modal-->
+                    <div style="display:none;" class="modal fade in" id="changeSkin" tabindex="-1" role="dialog" aria-hidden="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h4 class="modal-title">Change Template Skin</h4></div>
+                                <div class="modal-body">
+                                    <div class="row template-skins">
+                                        <a data-skin="skin-blur-violate" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-violate.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-lights" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-lights.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-city" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-city.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-greenish" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-greenish.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-night" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-night.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-blue" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-blue.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunny" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunny.jpg" alt="">
+
+                                        </a><a data-skin="skin-retro-burn" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-retro-burn.jpg" alt="">
+
+                                        </a><a data-skin="skin-tectile" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-tectile.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-chrome" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chrome.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-ocean" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-ocean.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunset" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunset.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-yellow" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-yellow.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-kiwi" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-kiwi.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-nexus" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-nexus.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-summer-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-summer-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-spring-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-spring-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-chalkboard" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chalkboard.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skin changer modal-->
+
+                </div>
+                <!-- /Topbar -->
+                <!-- Menu -->
+
+                <nav class="b-menu bg_opacity60">
+
+                    <div class="col-lg-6">
+                        <ul class="b-menu__list ">
+                            <li class="b-menu__list-item -active-item">
+                                <a class="dropdown-toggle" data-toggle="dropdown">OnRamp</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="">Dashboard</a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="">Highschools</a>
+                                        <ul class="dropdown-menu">
+                                            <li> <a href="">Highschool 1</a> </li>
+                                            <li> <a href="">Highschool 2</a> </li>
+                                            <li> <a href="">Highschool 3</a> </li>
+                                            <li> <a href="">Highschool 4</a> </li>
+                                            <li> <a href="">Highschool 5</a> </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="b-menu__list-item">
+                                <a class="dropdown-toggle" data-toggle="dropdown">Analytics</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li> <a href="">Dashboard</a> </li>
+                                    <li> <a href="">Search</a> </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="">Quick Search</a>
+                                        <ul class="dropdown-menu">
+
+                                            <li>
+                                                <a>
+                                                    <form role="search" class="" action="#">
+                                                        <div id="search">
+                                                            <input class="" placeholder="Search..." type="text"><button data-original-title="Search" type="submit" class="tip-right" title=""><i class="fa fa-search"></i></button>
+                                                        </div>
+                                                    </form>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-menu__list-item">
+                                <a href="">Outreach</a>
+                            </li>
+                            <li class="b-menu__list-item">
+                                <a href="">Pathways</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <a id="settings" data-toggle="modal" href="#changeSkin"><i class="fa fa-cog margin-right-5 "></i> Change Skin</a>
+                    </div>
+
+                </nav>
+
+
+                <!-- /Menu -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /Header -->
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- start main content wrapper-->
+    <!-- bread crumb-->
+    <ol class="breadcrumb animated fadeInRight">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li class="active">
+            <a>Counselor SRM</a>
+        </li>
+    </ol>
+    <!--bread crumb-->
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35">
+                        <h5>Counselor SRM </h5>                       
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!--profile tab-->
+                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="profile">
+                            <div class="ibox-content bg_opacity35">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="module">
+                                            <div class="module-inner">
+                                                <div class="side-bar bg_opacity35">
+                                              
+
+                                                    <nav class="side-menu tabs-container ">
+                                                        <ul class="nav nav-tabs">
+                                                            <li class="active"><a data-toggle="tab" href="#tabTask"><i class="fa fa-tasks margin-right-5"></i> Tasks</a></li>
+                                                            <li><a data-toggle="tab" href="#tabPrograms"><i class="fa fa-graduation-cap margin-right-5"></i> Programs</a></li>
+                                                            <li><a data-toggle="tab" href="#tabStudentSearch" onclick="loadStudentList"><i class="fa fa-search margin-right-5"></i> Student Search</a></li>
+
+                                                        </ul>
+                                                    </nav>
+
+                                                </div>
+                                                <form class="form-horizontal">
+                                                    <div class="content-panel tab-content bg-white">
+
+                                                        <!-- tasks -->
+                                                        <div id="tabTask" class="tab-pane animated fadeIn active">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Tasks</h2>
+                                                                <!--task list-->
+                                                                <div class="row">
+
+                                                                    <div class="table-responsive">
+                                                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="taskList_wrapper">
+                                                                            <table role="grid" id="taskList" class="table table-striped table-hover dataTable no-footer">
+                                                                                <thead>
+                                                                                    <tr role="row">
+                                                                                        <th aria-label="Status: activate to sort column descending" aria-sort="ascending" style="width: 50px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting_asc">Status</th>
+                                                                                        <th aria-label="Task ID: activate to sort column descending" aria-sort="ascending" style="width: 50px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting_asc">Task ID</th>
+                                                                                        <th aria-label="Task: activate to sort column ascending" style="width: 424px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Task</th>
+                                                                                        <th aria-label="Owner: activate to sort column ascending" style="width: 202px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Owner</th>
+                                                                                        <th aria-label="Assigned: activate to sort column ascending" style="width: 200px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Assigned</th>
+                                                                                        <th aria-label="Due Date: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Due Date</th>
+                                                                                        <th aria-label="Priority: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Priority</th>
+                                                                                        <th aria-label="Notes: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Notes</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>1</td>
+                                                                                        <td>Task 1</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Alice Redding</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-info">5-Pending</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>2</td>
+                                                                                        <td>Task 2</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Bob Silver</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-danger">1-High</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>3</td>
+                                                                                        <td>Task 3</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>4</td>
+                                                                                        <td>Task 4</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>5</td>
+                                                                                        <td>Task 5</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>6</td>
+                                                                                        <td>Task 6</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>7</td>
+                                                                                        <td>Task 7</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>8</td>
+                                                                                        <td>Task 8</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>9</td>
+                                                                                        <td>Task 9</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                <div class="checkbox">
+                                                                                                    <label>
+                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>10</td>
+                                                                                        <td>Task 10</td>
+                                                                                        <td>Alexandra Williams</td>
+                                                                                        <td>Tim Allen</td>
+                                                                                        <td>01/04/2016</td>
+                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                        <td>Some Notes blah blah</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                                <div class="form-group pull-left">
+                                                                    <a href="" class="btn btn-white btn-sm pull-left " data-toggle="modal" data-placement="top" data-dismiss="modal" data-target="#addTaskModal" title="Add Task"><i class="fa fa-search"></i> Add Task</a>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- tasks -->
+
+                                                        <!-- programs -->
+                                                        <div id="tabPrograms" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Student Service Programs</h2>
+                                                                <div class="row">
+
+                                                                    <div class="col-sm-1">
+                                                                        <a href="">
+                                                                            <div class="count-to count-metric-overview-top count-metric-alert font-bold text-center" data-from="0" data-to="135" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+
+                                                                        <div class="icon-count-footer text-center">
+                                                                            Onramp
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="82" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+
+                                                                        <div class="icon-count-footer text-center">
+                                                                            DSPS
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="22" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+
+                                                                        <div class="icon-count-footer text-center">
+                                                                            EOPS
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="147" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+
+                                                                        <div class="icon-count-footer text-center">
+                                                                            CalWorks
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="88" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+
+                                                                        <div class="icon-count-footer text-center">
+                                                                            Athletic
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="17" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+
+                                                                        <div class="icon-count-footer text-center">
+                                                                            Puenta
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="#">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="70" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+                                                                        <div class="icon-count-footer text-center">
+                                                                            Umoja
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="#">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="45" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+                                                                        <div class="icon-count-footer text-center">
+                                                                            MC2
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="#">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="125" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+                                                                        <div class="icon-count-footer text-center">
+                                                                            FYE
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="#">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="22" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+                                                                        <div class="icon-count-footer text-center">
+                                                                            Summer Bridge
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="#">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="32" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+                                                                        <div class="icon-count-footer text-center">
+                                                                            IMPACT AAPI
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-sm-1">
+                                                                        <a href="#">
+                                                                            <div class="count-to count-metric-overview-top font-bold text-center" data-from="0" data-to="45" data-speed="1500" data-decimals="0">0</div>
+                                                                        </a>
+                                                                        <div class="icon-count-footer text-center ">
+                                                                            Honors
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row">
+
+                                                                    <div class="table-responsive">
+                                                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="studentList_wrapper">
+                                                                            <table role="grid" id="studentList" class="table table-striped table-hover dataTable no-footer">
+                                                                                <thead>
+                                                                                    <tr role="row">
+                                                                                        <th aria-label="Student ID: activate to sort column descending" aria-sort="ascending" style="width: 276px;" colspan="1" rowspan="1" aria-controls="studentList" tabindex="0" class="sorting_asc">Student ID</th>
+                                                                                        <th aria-label="First Name: activate to sort column ascending" style="width: 424px;" colspan="1" rowspan="1" aria-controls="studentList" tabindex="0" class="sorting">First Name</th>
+                                                                                        <th aria-label="Last Name: activate to sort column ascending" style="width: 202px;" colspan="1" rowspan="1" aria-controls="studentList" tabindex="0" class="sorting">Last Name</th>
+                                                                                        <th aria-label="Ethnicity: activate to sort column ascending" style="width: 198px;" colspan="1" rowspan="1" aria-controls="studentList" tabindex="0" class="sorting">Ethnicity</th>
+                                                                                        <th aria-label="GPA: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="studentList" tabindex="0" class="sorting">GPA</th>
+                                                                                        <th aria-label="Action: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="studentList" tabindex="0" class="sorting">Action</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000001</td>
+                                                                                        <td>Patrick</td>
+                                                                                        <td>Smith</td>                                                                                      
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.4</td>
+                                                                                       
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000002</td>
+                                                                                        <td>Alice</td>
+                                                                                        <td>Alice</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>2.8</td>
+                                                                                        
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000003</td>
+                                                                                        <td>John</td>
+                                                                                        <td>Smith</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+                                                                                       
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000004</td>
+                                                                                        <td>Anna</td>
+                                                                                        <td>Jordan</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.2</td>
+                                                                                     
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000005</td>
+                                                                                        <td>Scott</td>
+                                                                                        <td>Jackson</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+                                                                                       
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000006</td>
+                                                                                        <td>Kirk</td>
+                                                                                        <td>Bass</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+                                                                                      
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000007</td>
+                                                                                        <td>Samson</td>
+                                                                                        <td>Richards</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+                                                                                       
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000008</td>
+                                                                                        <td>Jessica</td>
+                                                                                        <td>Tompson</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+                                                                                       
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000009</td>
+                                                                                        <td>Sally</td>
+                                                                                        <td>May</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+                                                                                      
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000010</td>
+                                                                                        <td>Alex</td>
+                                                                                        <td>Johnson</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+                                                                                        
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000011</td>
+                                                                                        <td>Fred</td>
+                                                                                        <td>Miller</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- programs-->
+
+                                                        <!-- student search-->
+                                                        <div id="tabStudentSearch" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Student Search</h2>
+                                                                <div class="row">
+
+                                                                    <div class="table-responsive">
+                                                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="studentSearchList_wrapper">
+                                                                            <table role="grid" id="studentSearchList" class="table table-striped table-hover dataTable no-footer">
+                                                                                <thead>
+                                                                                    <tr role="row">
+                                                                                        <th aria-label="Student ID: activate to sort column descending" aria-sort="ascending" style="width: 276px;" colspan="1" rowspan="1" aria-controls="studentSearchList" tabindex="0" class="sorting_asc">Student ID</th>
+                                                                                        <th aria-label="First Name: activate to sort column ascending" style="width: 424px;" colspan="1" rowspan="1" aria-controls="studentSearchList" tabindex="0" class="sorting">First Name</th>
+                                                                                        <th aria-label="Last Name: activate to sort column ascending" style="width: 202px;" colspan="1" rowspan="1" aria-controls="studentSearchList" tabindex="0" class="sorting">Last Name</th>
+                                                                                        <th aria-label="Ethnicity: activate to sort column ascending" style="width: 198px;" colspan="1" rowspan="1" aria-controls="studentSearchList" tabindex="0" class="sorting">Ethnicity</th>
+                                                                                        <th aria-label="GPA: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="studentSearchList" tabindex="0" class="sorting">GPA</th>
+                                                                                        <th aria-label="Action: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="studentSearchList" tabindex="0" class="sorting">Action</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000001</td>
+                                                                                        <td>Patrick</td>
+                                                                                        <td>Smith</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.4</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000002</td>
+                                                                                        <td>Alice</td>
+                                                                                        <td>Alice</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>2.8</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000003</td>
+                                                                                        <td>John</td>
+                                                                                        <td>Smith</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000004</td>
+                                                                                        <td>Anna</td>
+                                                                                        <td>Jordan</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.2</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000005</td>
+                                                                                        <td>Scott</td>
+                                                                                        <td>Jackson</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000006</td>
+                                                                                        <td>Kirk</td>
+                                                                                        <td>Bass</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000007</td>
+                                                                                        <td>Samson</td>
+                                                                                        <td>Richards</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000008</td>
+                                                                                        <td>Jessica</td>
+                                                                                        <td>Tompson</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000009</td>
+                                                                                        <td>Sally</td>
+                                                                                        <td>May</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000010</td>
+                                                                                        <td>Alex</td>
+                                                                                        <td>Johnson</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr role="row">
+                                                                                        <td class="sorting_1">0000000011</td>
+                                                                                        <td>Fred</td>
+                                                                                        <td>Miller</td>
+                                                                                        <td>Unknown</td>
+                                                                                        <td>3.0</td>
+
+                                                                                        <td>
+                                                                                            <select class="input-sm form-control input-s-sm inline">
+                                                                                                <option value="0">Select an Action</option>
+                                                                                                <option value="1">Email</option>
+                                                                                                <option value="2">SMS</option>
+                                                                                                <option value="3">Add to Mailing List</option>
+                                                                                                <option value="4">Profile</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+
+                                                               </div>                                                        
+                                                            </div>
+                                                        </div>
+                                                        <!-- student search-->
+
+                                                        <!-- goals-->
+                                                        <div id="tabGoals" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Goals</h2>
+
+                                                                <fieldset class="fieldset">
+                                                             
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <strong>Public Access</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="fieldset-title">Career Goals</h3>
+                                                                    <div class="form-group">
+                                                                        <!-- career control-->
+                                                                        <label class="col-sm-2 control-label" for="textinput">I want to be a(n)</label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="text" placeholder="Graphic Designer" class="form-control">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableIWantToBe" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="fieldset-title">Education Goals</h3>
+                                                                    <div class="form-group">
+                                                                        <!-- career control-->
+                                                                        <label class="col-sm-2 control-label" for="textinput">I want to achieve</label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="text" placeholder="Obtain a 4 year degree in..." class="form-control">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableIWantToBe" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE">
+                                                                        </div>
+                                                                    </div>
+
+                                                                   
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- goals-->
+                                                        <!-- notifications-->
+                                                        <div id="tabNotifications" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Notifications</h2>
+
+                                                                <fieldset class="fieldset">
+
+                                                                    <div class="form-group">
+                                                                        <!-- notification checkbox / toggle controls -->
+                                                                        <label class="col-sm-2 control-label" for="enableStatusChangeNotification"> Receive Email Notifications </label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="checkbox" id="enableStatusChangeNotification" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-color="info"  >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <!-- notification checkbox / toggle controls -->
+                                                                        <label class="col-sm-2 control-label" for="enableStatusChangeNotification"> Receive Text Notifications </label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="checkbox" id="enableTextNotification" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-color="info" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <!-- notification checkbox / toggle controls -->
+                                                                        <label class="col-sm-2 control-label" for="enableStatusChangeNotification">  Turn on Parent Notifications </label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="checkbox" id="enableGuardianNotification" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-color="info"  >
+                                                                        </div>
+                                                                    </div>
+
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- notifications-->
+                                                        <!-- settings-->
+                                                        <div id="tabSettings" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Settings</h2>
+
+                                                                <fieldset class="fieldset">
+                                                                
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <strong>Public Access</strong>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>GPA</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display your GPA</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableGPA" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>Connections</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display who you are connected with.</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableConnections" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>Followers</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display who is following you.</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableFollowers" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>Recent Activity</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display your current recent activity.</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableRecentActivity" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- settings-->
+
+                                                    </div>
+                                                </form>
+                                           
+                                     
+
+                                            </div>
+
+                                        </section>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--profile tab-->
+                        <!--public tab-->
+                        <div role="tabpanel" class="tab-pane animated fadeIn" id="public">
+                            <div class="ibox-content bg_opacity35">
+                                <div class="row">
+
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12  bg-retro-burn" style="min-height:150px;">
+
+                                        </div>
+
+                                        <div class="col-sm-12 bg-white">
+
+                                            <div class="row ">
+
+                                                <div class="col-sm-2 profile-pic">
+                                                    <img src="images/avatars/f3.jpg">
+
+                                                    <br>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-xs"><i class="fa fa-envelope-o"></i> Send Message</a>
+                                                    <br>
+
+                                                    <div class="padding-10">
+                                                        <h4 class="font-md">
+                                                            <strong><span class="text-muted u-align-right">325</span></strong>
+                                                            <br>
+                                                            <small>Followers</small>
+                                                        </h4>
+                                                        <br>
+                                                        <h4 class="font-md">
+                                                            <strong><span class="text-muted u-align-right">125</span></strong>
+                                                            <br>
+                                                            <small>Connections</small>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h1>
+                                                        Alexandra <span class="semi-bold">Williams</span>
+                                                        <br>
+
+                                                    </h1>
+
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;<span class="txt-color-darken">Cupertino Highschool</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-phone"></i>&nbsp;&nbsp;(<span class="txt-color-darken">313</span>) <span class="txt-color-darken">464</span> - <span class="txt-color-darken">6473</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a class="link" href="mailto:">alexandrawilliams@website.com</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-skype"></i>&nbsp;&nbsp;<span class="txt-color-darken">alexandrawilliams</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-birthday-cake"></i>&nbsp;&nbsp;<span class="txt-color-darken">12/1/1982</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-paint-brush"></i>&nbsp;&nbsp;<span class="txt-color-darken">Caucasian/White</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-female"></i>&nbsp;&nbsp;<span class="txt-color-darken">Female</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<span class="txt-color-darken">123 West Street Sacramento, Ca. 95864</span>
+                                                            </p>
+                                                        </li>
+
+                                                    </ul>
+
+
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h1>
+
+                                                        <br>
+
+                                                    </h1>
+
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-bar-chart-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">3.2 GPA</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-star-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">Personal Intrests</span>
+                                                                <ol>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Dancing</span></li>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Mediation</span></li>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Reading</span></li>
+                                                                </ol>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-star-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">Personal Intrests</span>
+                                                                <ol>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Math</span></li>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Science</span></li>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Music</span></li>
+                                                                </ol>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+
+
+                                                </div>
+
+
+                                                <div class="col-sm-3">
+                                                    <h1><small>Connections</small></h1>
+                                                    <ul class="list-inline friends-list">
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f5.jpg" alt="friend-1">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f6.jpg" alt=" friend-2">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m5.jpg" alt=" friend-3">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m2.jpg" alt="friend-4">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f8.jpg" alt="friend-5">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m8.jpg" alt="friend-6">
+                                                        </li>
+                                                        <li>
+                                                            <a class="link" href="javascript:void(0);">13 more</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <h1><small>Recent activies</small></h1>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Was successfully enrolled</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Met with a counsoler</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Has new assigned education plan</span>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col-sm-7">
+                                                    <br>
+                                                    <p class="font-md">
+                                                        <i style="font-style:italic;">A little about me...</i>
+                                                    </p>
+                                                    <p>
+                                                        <bold> I want to be a Business Owner</bold>
+                                                    </p>
+                                                    <p>
+                                                        Alexandra Williams is finishing her last year at DePaul Highschool where she is interested in business. Although she has yet to declare a major, she’s considering finance or marketing. After watching her parents run a restaurant for years, she knew at a very young age that she also wanted to go into business. In high school, Alison waited tables at the family restaurant during the summer and was fascinated by the many working parts it takes to operate a successful business. From this experience, she learned the value of hard work, efficiency, and communication. In the future, she hopes to continue her parents’ legacy and run her own five-star restaurant in downtown. Alison spends her spare time singing in her church choir and cooking for friends and family.
+                                                    </p>
+
+                                                    <br>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- end row -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--public tab-->
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- task modal-->
+    <div style="display: none;" class="modal inmodal fade" id="addTaskModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="modal-title"><i class="fa fa-user"></i> Add Task</h3>
+                </div>
+                <div class="modal-body">
+          
+                        <h2 class="title">Task Information</h2>
+                        <form role="form">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label ">Task Name</label>
+                                <div class="col-md-10 p-b-xs">
+                                    <input class="form-control" placeholder="Task Name" type="text">
+                                </div>                               
+                            </div>    
+                                                    
+                            <div class="form-group">
+                                <label class="col-md-2 control-label ">Owner Name</label>
+                                <div class="col-md-10 p-b-xs">
+                                    <input class="form-control" placeholder="Who owns this task" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label ">Assigned To</label>
+                                <div class="col-md-10 p-b-xs">
+                                    <input class="form-control" placeholder="Person Task in Assigned to" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label ">Due Date</label>
+                                <div class="col-md-10 p-b-xs">
+                                    <div class="input-group date">
+                                        <input id="taskDueDate" type="text" class="form-control" data-provide="datepicker">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label ">Priority To</label>
+                                <div class="col-md-10 p-b-xs">
+                                    <select class="form-control bd-drop-down" id="taskPriority" placeholder="Priority" name="select" style="width:200px;">
+                                        <option value=" 0">
+                                            0-Now
+                                        </option>
+                                        <option value="1">1-High</option>
+                                        <option value="2">2-Medium</option>
+                                        <option value="3">3-Low</option>
+                                        <option value="4">4-N/A</option>
+                                        <option value="5">5-Pending</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label ">Notes</label>
+                                <div class="col-md-10 p-b-xs">
+                                    <textarea id="taskNotes" placeholder="Optional description goes here..." class="form-control" type="text"></textarea>
+                                </div>
+                            </div>
+
+
+                        </form>
+                  
+
+                </div>
+                <div class="modal-footer">
+
+                    <!--<a href="" class="btn btn-palegreen btn-sm" data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Discard"><i class="fa fa-times"></i> Cancel</a>-->
+                    <a href="" class="btn btn-white btn-sm pull-right" data-toggle="tooltip" data-placement="top" data-dismiss="modal" title="Cancel"><i class="fa fa-times"></i> Cancel</a>
+                    <a href="" class="btn btn-white btn-sm pull-right" data-toggle="modal" data-target="" data-placement="top" data-dismiss="modal" title="Save"><i class="fa fa-save"></i> Save</a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end main content wrapper-->
+    <!-- Mainly scripts -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <script src="js/plugins/jquery-ui.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins/jquery.easing.min.js"></script>
+    <script src="js/plugins/datatables.min.js"></script>
+    <script src="js/plugins/jquery.countTo.js"></script>
+    <script src="js/plugins/toastr.js"></script>
+    <script src="js/plugins/tag-it.js"></script>
+    <script src="js/plugins/bootstrap-datepicker.min.js"></script>
+    <script src="js/plugins/jquery.slimscroll.min.js"></script>
+    <script src="js/onramp-main-menu.js"></script>
+    <script src="js/onramp-counselor-srm.js"></script>
+
+</body>
+</html>

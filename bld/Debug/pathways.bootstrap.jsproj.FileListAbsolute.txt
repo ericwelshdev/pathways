@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bin\Debug\ReverseMap\resources.pri
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bin\Debug\AppxManifest.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\priconfig.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\priconfig.xml.intermediate
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\layout.resfiles
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\layout.resfiles.intermediate
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\resources.resfiles
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\resources.resfiles.intermediate
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\pri.resfiles
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\pri.resfiles.intermediate
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\qualifiers.txt
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\qualifiers.txt.intermediate
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bld\Debug\ProjectArchitectures.txt
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\pathways\pathways.bootstrap\bin\Debug\pathways.bootstrap.build.appxrecipe

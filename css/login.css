@@ -1,0 +1,15 @@
+﻿
+h3, p{
+    color:white;
+}
+
+
+h3 {
+    padding-top:20px;
+	font-size: 24px;
+    font-weight: 400;
+}
+.text-control-muted{
+    color: #2d7caa;
+    font-size:15px;
+}

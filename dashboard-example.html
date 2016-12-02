@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/vendor/animate.css" rel="stylesheet">
+    <link href="css/vendor/fullcalendar.min.css" rel="stylesheet">
+    <link href="css/main-style.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="" class="darkmuteblue-bg">
+        <!--start bread crumb-->
+        <div class="row wrapper border-bottom darkmuteblue-bg page-heading">
+            <div class="col-lg-10">
+                <h2>OnRamp</h2>
+                <ol class="breadcrumb">
+                    <li class="active">
+                        <a href="inbox.html"><strong>Dashboard</strong></a>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </div>
+    <!--end bread crumb-->
+    <!-- start main content wrapper-->
+    <!-- dash board elements-->
+
+    <div class="row">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="col-lg-4 p-r-no">
+
+                <!--my path time line-->
+                <div class="ibox float-e-margins m-top4  m-bottom4">
+                    <div class="ibox-content-transparent bg_muteblue-fade">
+                        <span class="tile-header"> <i class="panel-title-icon fa fa-clock-o"></i> My Path</span>
+                        <!--progress-->
+                        <div class=" panel-body text-center p-t-no">
+                            <canvas height="200" width="200" id="goal-chart" class=".gauge-chart" style="margin: 0 auto"></canvas>
+                        </div>
+                        <!--completed-->
+                        <div class="panel-group" id="accordion">
+                            <div class="panel-transparent panel-default">
+                                <div class="panel panel-heading panel-heading-complete">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i> Completed
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="timeline">
+                                            <!-- Timeline header -->
+                                            <div class="tl-header now teal-solid-bg">Label</div>
+                                            <!-- class 1 -->
+                                            <div class="tl-entry">
+                                                <div class="tl-time">
+
+                                                </div>
+                                                <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                                <div class="panel tl-body">
+                                                    <a href="#">Task 1</a><a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <!-- class 2 -->
+                                            <div class="tl-entry left">
+                                                <div class="tl-time">
+
+                                                </div>
+                                                <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                                <div class="panel tl-body">
+                                                    <a href="#">Task 2</a><a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <!-- class 3 -->
+                                            <div class="tl-entry">
+                                                <div class="tl-time">
+
+                                                </div>
+                                                <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                                <div class="panel tl-body">
+                                                    <a href="#">Task 3</a><a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <!-- class 4 -->
+                                            <div class="tl-entry">
+                                                <div class="tl-time">
+
+                                                </div>
+                                                <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                                <div class="panel tl-body">
+                                                    <a href="#">Task 4</a><a href="#"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--present-->
+                        <div class="panel panel-transparent panel-default">
+                            <div class="panel-heading panel-heading-present">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        <i class="fa fa-book"></i> Present
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="timeline">
+                                        <!-- Timeline header -->
+                                        <div class="tl-header now teal-solid-bg">Label</div>
+                                        <!-- class 1 -->
+                                        <div class="tl-entry">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 1</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <!-- class 2 -->
+                                        <div class="tl-entry left">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 2</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <!-- class 3 -->
+                                        <div class="tl-entry">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 3</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <!-- class 4 -->
+                                        <div class="tl-entry">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 4</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--uncomplete-->
+                        <div class="panel panel-transparent panel-default">
+                            <div class="panel-heading panel-heading-uncomplete">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        <i class="fa fa-square-o" aria-hidden="true"></i> Still Needed
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="timeline">
+                                        <!-- Timeline header -->
+                                        <div class="tl-header now teal-solid-bg">Label</div>
+                                        <!-- class 1 -->
+                                        <div class="tl-entry">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 1</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <!-- class 2 -->
+                                        <div class="tl-entry left">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 2</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <!-- class 3  -->
+                                        <div class="tl-entry">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 3</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <!-- class 4  -->
+                                        <div class="tl-entry">
+                                            <div class="tl-time">
+
+                                            </div>
+                                            <div class="tl-icon bg-success"><i class="fa fa-book"></i></div>
+                                            <div class="panel tl-body">
+                                                <a href="#">Task 4</a><a href="#"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 p-l-xxs p-r-xxs connectpanels">
+                <div class="row">
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--progress gpa current-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+
+                            <div class="ibox-content-transparent bg_mutered-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-pie-chart"></i> Progress</span>
+                                <div style="overflow:hidden; width: auto; height: 200px;" class="widget-content">
+                                    <div class=" panel-body text-center">
+                                        <span class="count-to count-metric" id="current-gpa" data-from="0" data-to="3.8" data-speed="1500" data-decimals="1">3.8</span>
+                                        <span class="tile-header">Current</span>
+                                    </div>
+                                    <h4>
+                                        <small class="m-r"><a ui-sref="flot_chart"> View Details </a></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--units complete-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+
+                            <div class="ibox-content-transparent bg_mutepurple-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-pie-chart"></i> Units</span>
+                                <div style="overflow: hidden; width: auto; height: 200px;" class="widget-content">
+                                    <div class=" panel-body text-center">
+                                        <span class="count-to count-metric" id="current-units" data-from="0" data-to="52" data-speed="1500" data-decimals="0">52</span>
+                                        <span class="tile-header">Completed</span>
+                                    </div>
+                                    <h4>
+                                        <small class="m-r"><a> View Details </a></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--major goal-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+
+                            <div class="ibox-content-transparent bg_mutegrey-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-thumb-tack"></i> Tracker</span>
+                                <div style="overflow: hidden; width: auto; height: 200px;" class="widget-content">
+                                    <div class=" panel-body text-center">
+                                        <span>Tracker Label</span>
+                                        <br>
+                                        <span class="tile-header">Tracker info</span>
+                                        <span>Tracker Sublabel</span>
+                                        <br>
+                                        <span class="tile-header">Tracker subinfo</span>
+                                    </div>
+                                    <h4>
+                                        <small class="m-r"><a ui-sref="flot_chart"> View Details </a></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 p-l-xxs p-r-xxs connectpanels">
+                        <!--gpa stats-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+                            <div class="ibox-content-transparent bg_mutegrey-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-line-chart"></i> Stats</span>
+                                <div style="overflow: hidden; width: auto; height: 320px;" class="widget-content">
+                                    <div>
+                                        <canvas id="gpa-line-chart" width="768" height="200" style="max-height:300px;"></canvas>
+                                    </div>
+                                    <h4>
+                                        <br>
+                                        <small class="m-r"><a ui-sref="flot_chart"> View Stat Details </a></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--daily quote-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+
+                            <div class="ibox-content-transparent bg_mutelightblue-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-quote-right"></i> Daily Quote</span>
+                                <div style="overflow: hidden; width: auto; height: 320px;" class="widget-content">
+                                    <div class=" panel-body text-center">
+                                        <br />
+                                        <span class="tile-header">
+                                            <span>August Friday 13th</span>
+                                            <br />
+                                            <i class="panel-title-icon fa fa-quote-left"></i>
+                                            <strong>I will persist until I succeed.</strong>
+                                            <i class="panel-title-icon fa fa-quote-right"></i>
+                                        </span>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--semister goals-->
+                        <div class=" ibox float-e-margins m-top4 m-bottom4">
+                            <div class="ibox-content-transparent bg_mutepurple-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-flag-checkered"></i> My Goals</span>
+                                <div style="overflow: hidden; width: auto; height: 425px;" class="widget-content">
+                                    <ul class="list-unstyled activity-list" style="overflow:auto">
+                                        <li>
+                                            <i class="fa fa-check activity-icon pull-left icon-success"></i>
+                                            <p>All project tasks are on schedule <span class="timestamp">2 minutes ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check-circle activity-icon pull-left icon-success"></i>
+                                            <p>The system is running well, no error found. <span class="timestamp">4 minutes ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-unlock activity-icon pull-left icon-danger"></i>
+                                            <p>You have unsecure file permission on this project. Go to <a href="">File Manager</a> to fix it <span class="timestamp">15 minutes ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-bug activity-icon pull-left icon-info"></i>
+                                            <p>New <a href="#">bug report</a> has been submitted <span class="timestamp">1 hour ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-close activity-icon pull-left icon-danger"></i>
+                                            <p>Background job <a href="#">#783458</a> has failed. See the <a href="#">logs</a> <span class="timestamp">3 hour ago</span></p>
+                                        </li>
+                                    </ul>
+                                    <nav>
+                                        <ul class="pager pull-left">
+                                            <li class="pager-prev"><a href="#">Older</a></li>
+                                            <li class="pager-next"><a href="#">Newer</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--major goal-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+
+                            <div class="ibox-content-transparent bg_mutered-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-thumb-tack"></i> Tracker</span>
+                                <div style="overflow: hidden; width: auto; height: 425px;" class="widget-content">
+                                    <div class=" panel-body text-center">
+                                        <br />
+                                        <span>Tracker label</span>
+                                        <br>
+                                        <span class="tile-header">Trackerinfo</span>
+                                        <span>Tracker sublabel</span>
+                                        <br>
+                                        <span class="tile-header p-b-xl">Tracker subinfo</span>
+                                    </div>
+                                    <h4>
+                                        <small class="m-r"><a ui-sref="flot_chart"> View Details </a></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--my followers-->
+                        <div class=" ibox float-e-margins m-top4 m-bottom4">
+                            <div class="ibox-content-transparent bg_muteblue-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-share-alt"></i> My Followers</span>
+                                <div style="overflow: hidden; width: auto; height: 425px;" class="widget-content">
+                                    <ul class="list-unstyled activity-list" style="overflow:auto">
+                                        <!-- follow user-->
+                                        <li>
+                                            <a class="pull-left">
+                                                <img class="img-circle follower-avatar available" src="images/avatars/f1.jpg">
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-info btn-rounded pull-right btn-outline">Follow</a>
+                                            <p><a class="text-info" href="">@Alan Marry</a> Started Following you.</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                        </li>
+
+                                        <!-- follow user-->
+                                        <li>
+                                            <a class="pull-left">
+                                                <img class="img-circle follower-avatar available" src="images/avatars/m1.jpg">
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-info btn-rounded pull-right btn-outline">Follow</a>
+                                            <p><a class="text-info" href="">@Stock Man</a> Started Following you.</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                        </li>
+
+                                        <!-- follow user-->
+                                        <li>
+                                            <a class="pull-left">
+                                                <img class="img-circle follower-avatar available" src="images/avatars/f2.jpg">
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-info btn-rounded pull-right">Following</a>
+                                            <p>You Started Following <a class="text-info" href="">@Stacey Vale</a></p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                        </li>
+
+                                        <!-- follow user-->
+                                        <li>
+                                            <a class="pull-left">
+                                                <img class="img-circle follower-avatar available" src="images/avatars/m9.jpg">
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-info btn-rounded pull-right btn-outline">Follow</a>
+                                            <p><a class="text-info" href="">@Jonathan Febrick<</a> Started Following you.</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                        </li>
+
+                                        <!-- follow user-->
+                                        <li>
+                                            <a class="pull-left">
+                                                <img class="img-circle follower-avatar available" src="images/avatars/f6.jpg">
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-info btn-rounded pull-right">Following</a>
+                                            <p>You Started Following <a class="text-info" href="">@Mary Bits</a></p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minutes ago</small>
+                                        </li>
+                                    </ul>
+                                    <nav>
+                                        <ul class="pager pull-left">
+                                            <li class="pager-prev"><a href="#">Older</a></li>
+                                            <li class="pager-next"><a href="#">Newer</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 p-l-xxs p-r-xxs connectpanels">
+                        <!--assignments-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+                            <div class="ibox-content-transparent bg_mutegrey-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-paperclip"></i> My Assigments</span>
+                                <div style="overflow: hidden; width: auto; height: 410px;" class="widget-content">
+                                    <ul class="list-unstyled activity-list">
+                                        <li>
+                                            <i class="fa fa-check activity-icon pull-left icon-success"></i>
+                                            <p>All project tasks are on schedule <span class="timestamp">2 minutes ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check-circle activity-icon pull-left icon-success"></i>
+                                            <p>The system is running well, no error found. <span class="timestamp">4 minutes ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-unlock activity-icon pull-left icon-danger"></i>
+                                            <p>You have unsecure file permission on this project. Go to <a href="">File Manager</a> to fix it <span class="timestamp">15 minutes ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-bug activity-icon pull-left icon-info"></i>
+                                            <p>New <a href="#">bug report</a> has been submitted <span class="timestamp">1 hour ago</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-close activity-icon pull-left icon-danger"></i>
+                                            <p>Background job <a href="#">#783458</a> has failed. See the <a href="#">logs</a> <span class="timestamp">3 hour ago</span></p>
+                                        </li>
+
+                                    </ul>
+                                    <nav>
+                                        <ul class="pager pull-left">
+                                            <li class="pager-prev"><a href="#">Older</a></li>
+                                            <li class="pager-next"><a href="#">Newer</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-l-xxs p-r-xxs connectpanels">
+                        <!--tasks-->
+                        <div class="ibox float-e-margins m-top4  m-bottom4">
+                            <div class="ibox-content-transparent bg_mutepurple-fade">
+                                <span class="tile-header"> <i class="panel-title-icon fa fa-tasks"></i> My Tasks</span>
+                                <div style="overflow:hidden; width: auto; height: 410px;" class="widget-content">
+                                    <ul class="list-unstyled activity-list" style="overflow:auto">
+                                        <li>
+                                            <a class="check-link" href="#"><i class="fa fa-check-square"></i> </a>
+                                            <span class="m-l-xs todo-completed">Buy a milk</span>
+                                        </li>
+                                        <li>
+                                            <a class="check-link" href="#"><i class="fa fa-square-o"></i> </a>
+                                            <span class="m-l-xs">Go to shop and find some products.</span>
+                                        </li>
+                                        <li>
+                                            <a class="check-link" href="#"><i class="fa fa-square-o"></i> </a>
+                                            <span class="m-l-xs">Send documents to Mike</span>
+                                            <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
+                                        </li>
+                                        <li>
+                                            <a class="check-link" href="#"><i class="fa fa-square-o"></i> </a>
+                                            <span class="m-l-xs">Go to the doctor dr Smith</span>
+                                        </li>
+                                        <li>
+                                            <a class="check-link" href="#"><i class="fa fa-check-square"></i> </a>
+                                            <span class="m-l-xs todo-completed">Plan vacation</span>
+                                        </li>
+                                        <li>
+                                            <a class="check-link" href="#"><i class="fa fa-square-o"></i> </a>
+                                            <span class="m-l-xs">Create new stuff</span>
+                                        </li>
+
+                                    </ul>
+                                    <nav>
+                                        <ul class="pager pull-left">
+                                            <li class="pager-prev"><a href="#">Older</a></li>
+                                            <li class="pager-next"><a href="#">Newer</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end main content wrapper-->
+    <!-- Mainly scripts -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins/jquery.metisMenu.js"></script>
+    <script src="js/plugins/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/jquery.easing.min.js"></script>
+    <script src="js/plugins/jquery.easypiechart.js"></script>
+    <script src="js/plugins/jquery.countTo.js"></script>
+    <script src="js/plugins/jquery.classyloader.min.js"></script>
+
+    <script src="js/plugins/moment.min.js"></script>
+    <script src="js/plugins/Chart.bundle.js"></script>
+    <script src="js/plugins/fullcalendar.js"></script>
+
+    <script src="js/dashboard-student.js"></script>
+
+
+
+</body>
+</html>

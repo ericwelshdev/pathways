@@ -1,0 +1,749 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onramp Student View</title>
+    <link rel="icon" href="images/pathways-color-icon.png">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/progress-timeline.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-main-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-student-view-style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body id="skin-blur-lights">
+
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- Header -->
+    <header class="l-header">
+
+        <!-- Logo -->
+        <a href="" class="b-logo">
+            <img src="images/logo.png" alt="My Path">
+        </a>
+        <!-- /Logo -->
+
+        <div class="b-sidebar">
+
+            <div class="b-sidebar__overlay"></div>
+
+            <a href="" class="b-sidebar__toggler">
+                <img src="assets/img/menu.svg" alt="">
+            </a>
+
+            <div class="b-sidebar__content">
+
+                <!-- Topbar -->
+                <div class="b-topbar bg-black">
+
+                    <!-- User panel -->
+                    <div class="b-user-panel">
+                        <div class="b-user-panel__info">
+                            <a href="" class="b-user-panel__name">Alexandra Williams</a>
+                            <div class="b-user-panel__pict">
+                                <img src="images/avatars/f3.jpg" class="img-circle avatar-height-30" alt="Alexandra Williams">
+                            </div>
+                        </div>
+                        <ul class="b-user-panel__menu animated fadeInUp">
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-user margin-right-5"></i> Profile</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-question-circle margin-right-5"></i> Help</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-sign-out margin-right-5"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /User panel -->
+                    <!-- Notifications -->
+                    <!-- <div class="b-notifications">
+                        <a href="" class="b-notifications__icon">
+                            <span class="b-notifications__icon-text">
+                                Notifications
+                            </span>
+                            <span class="b-notifications__icon-picture">
+                                <img src="images/notifications.png" alt="">
+                                <span class="b-notifications__count">153</span>
+                            </span>
+                        </a>
+                        <ul class="b-notifications__list">
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_blue">
+                                        <i class="b-icon b-icon_path"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have added a new tool. Click here to try it.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 min. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have received your term paper grade.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 h. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_violet">
+                                        <i class="b-icon b-icon_settings"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have made a system upgradee.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have cancelled your mid term exam.
+                                    </span>
+                                    <span class="b-notifications__item-time">43 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_red">
+                                        <i class="b-icon b-icon_goal"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        The T&amp;C for your Msc. Computer Science have been
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_orange">
+                                        <i class="b-icon b-icon_quote"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        A new quote theme has been installed.
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- /Notifications -->
+                    <!-- Search form -->
+                    <!-- <form class="b-search-form">
+                        <input type="text" class="b-search-form__input" placeholder="Search...">
+                        <button type="submit" class="b-search-form__button"></button>
+                    </form> -->
+                    <!-- /Search form -->
+                    <!-- skin changer modal-->
+                    <div style="display:none;" class="modal fade in" id="changeSkin" tabindex="-1" role="dialog" aria-hidden="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h4 class="modal-title">Change Template Skin</h4></div>
+                                <div class="modal-body">
+                                    <div class="row template-skins">
+                                        <a data-skin="skin-blur-violate" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-violate.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-lights" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-lights.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-city" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-city.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-greenish" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-greenish.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-night" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-night.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-blue" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-blue.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunny" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunny.jpg" alt="">
+
+                                        </a><a data-skin="skin-retro-burn" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-retro-burn.jpg" alt="">
+
+                                        </a><a data-skin="skin-tectile" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-tectile.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-chrome" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chrome.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-ocean" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-ocean.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunset" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunset.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-yellow" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-yellow.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-kiwi" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-kiwi.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-nexus" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-nexus.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-summer-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-summer-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-spring-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-spring-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-chalkboard" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chalkboard.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skin changer modal-->
+
+                </div>
+                <!-- /Topbar -->
+                <!-- Menu -->
+
+                <nav class="b-menu bg_opacity60">
+
+                    <div class="col-lg-6">
+                        <ul class="b-menu__list">
+                            <li class="b-menu__list-item -active-item">
+                                <a href="">Dashboard</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <a id="settings" data-toggle="modal" href="#changeSkin"><i class="fa fa-cog margin-right-5 "></i> Change Skin</a>
+                    </div>
+
+                </nav>
+
+
+                <!-- /Menu -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /Header -->
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- start main content wrapper-->
+    <!-- bread crumb-->
+    <ol class="breadcrumb animated fadeInRight">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li class="active">
+            <a>Student View</a>
+        </li>
+    </ol>
+    <!--bread crumb-->
+
+    <div id="pagewrapperContent" class="wrapper wrapper-content animated fadeInRight" style="height:auto;">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35">
+
+                        <h5>College Readiness </h5>
+
+                    </div>
+                    <div class="ibox-content bg_opacity35 no-bottom-border-radius">
+                        <div class="row">
+                            <div class="col-md-2">
+
+
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="step-content">
+
+                                    <div id="stepOrientation" class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                        <a class="step-icon step-icon-check" href="#tabOrientation" aria-controls="tabOrientation" role="tab" data-toggle="tab" aria-expanded="false"></a>
+                                    </div>
+
+                                </div>
+                                <h4 role="presentation" class="active"><a id="btnOrientation" class="active" href="#tabOrientation" aria-controls="tabOrientation" role="tab" data-toggle="tab" aria-expanded="false">Orientation</a></h4>
+
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="step-content">
+
+                                    <div id="stepAssessment" class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                        <a class="step-icon step-icon-check" href="#tabAssessment" aria-controls="tabAssessment" role="tab" data-toggle="tab" aria-expanded="false"></a>
+                                    </div>
+
+                                </div>
+                                <h4 role="presentation"><a id="btnAssessment" href="#tabAssessment" aria-controls="tabAssessment" role="tab" data-toggle="tab" aria-expanded="false">Assessment</a></h4>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="step-content">
+
+                                    <div id="stepFinancialAid" class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                        <a class="step-icon step-icon-times" href="#tabFinancialAid" aria-controls="tabFinancialAid" role="tab" data-toggle="tab" aria-expanded="false"></a>
+                                    </div>
+
+                                </div>
+                                <h4 role="presentation" class=""><a id="btnFinancialAid" href="#tabFinancialAid" aria-controls="tabFinancialAid" role="tab" data-toggle="tab" aria-expanded="false">Financial Aid</a></h4>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="">
+
+                                    <div id="stepEdPlan" class="step-icon-wrap step-icon-effect-1 step-icon-effect">
+                                        <a class="step-icon step-icon-check" href="#tabEdPlan" aria-controls="tabEdPlan" role="tab" data-toggle="tab" aria-expanded="false"></a>
+                                    </div>
+
+                                </div>
+                                <h4 role="presentation" class=""><a id="btnEdPlan" href="#tabEdPlan" aria-controls="tabEdPlan" role="tab" data-toggle="tab" aria-expanded="false">Ed Plan</a></h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Readiness Details-->
+
+        <div class="tab-content">
+            <!--Orientation tab-->
+            <div role="tabpanel" class="tab-pane animated fadeIn" id="tabOrientation">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title bg_opacity35 no-border-radius">
+
+                                <h5>Orientation </h5>
+                            </div>
+                            <div class="ibox-content bg_opacity35 no-border-radius">
+                                <div class="row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-8 center-orientation">
+                                        <h2 class="txt-color-white">Orientation is mandatory if enrolling in 6.0 or more units unless you qualify for an Orientation Exemption. Please speak with your Counselor for an Orientation Exemption.</h2>
+                                        <br />
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Orientation tab-->
+            <div role="tabpanel" class="tab-pane animated fadeIn " id="tabAssessment">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title bg_opacity35 no-border-radius">
+
+                                <h5>Assessment </h5>
+                            </div>
+                            <div class="ibox-content bg_opacity35 no-border-radius">
+                                <div class="row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-8 center-orientation">
+                                        <h2 class="txt-color-white">You have 3 ACT programs available.</h2>
+                                        <br />
+                                        <table class="table table-hover no-margins txt-color-white">
+                                            <thead class="font-bold">
+                                                <tr>
+                                                    <th style="min-width:150px;">ACT</th>
+                                                    <th style="min-width:50px;">Score</th>
+                                                    <th>Placement</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Math</td>
+                                                    <td><i class="fa fa-level-up txt-color-good p-r-xs"></i>2500</td>
+                                                    <td>Your Math placement is 122 (Plane Geometry), or Math 123 (Intermediate Algebra)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>English</td>
+                                                    <td><i class="fa fa-level-up txt-color-normal p-r-xs"></i>1300</td>
+                                                    <td>Your English placement is ENG 253 (Fundamentals of Composition and Reading)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ESL</td>
+                                                    <td><i class="fa fa-level-down txt-color-danger p-r-xs"></i>0</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Orientation tab-->
+            <div role="tabpanel" class="tab-pane animated fadeIn " id="tabFinancialAid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title bg_opacity35 no-border-radius">
+
+                                <h5>Financial Aid </h5>
+                            </div>
+                            <div class="ibox-content bg_opacity35 no-border-radius">
+                                <div class="row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-8 center-orientation">
+                                        <h2 class="txt-color-white">You have 2 financial programs available.</h2>
+                                        <br />
+                                        <table class="table table-hover no-margins txt-color-white">
+                                            <thead class="font-bold">
+                                                <tr>
+                                                    <th style="min-width:150px;">Program</th>
+                                                    <th style="min-width:50px;">Status</th>
+                                                    <th>Submitted Date</th>
+                                                    <th>Notes</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>FAFSA</td>
+                                                    <td><i class="fa fa-check-circle-o txt-color-good p-r-xs"></i>Submitted</td>
+                                                    <td>01/13/2016</td>
+                                                    <td>No Notes available</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BOG</td>
+                                                    <td><i class="fa fa-check-circle-o txt-color-good p-r-xs"></i>Submitted</td>
+                                                    <td>01/13/2016</td>
+                                                    <td>No Notes available</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Orientation tab-->
+            <div role="tabpanel" class="tab-pane animated fadeIn " id="tabEdPlan">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title bg_opacity35 no-border-radius">
+
+                                <h5>Ed Plan </h5>
+                            </div>
+                            <div class="ibox-content bg_opacity35 no-border-radius">
+                                <div class="row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-8 center-orientation">
+                                        <h2 class="txt-color-white">Your current Educational Plan is an ABBREVIATED/COMPREHENSIVE plan.</h2>
+                                        <br />
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Readiness Details-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35 no-top-border-radius">
+
+                        <h5>Counselor </h5>
+
+                    </div>
+                    <div class="ibox-content bg_opacity35 no-top-border-radius">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="profile-container">
+                                    <div class="profile-header row">
+                                        <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                                            <img src="images/avatars/f9.jpg" alt="" class="header-avatar">
+                                        </div>
+                                        <div class="col-lg-4 col-md-8 col-sm-12 profile-info">
+                                            <div class="header-fullname">Kim Ryder</div>
+                                            <!--<a href="#" class="btn btn-palegreen btn-sm  btn-follow">
+                                                <i class="fa fa-check"></i>
+                                                Following
+                                            </a>-->
+                                            <div class="header-information">
+                                                Student Counselor
+                                            </div>
+                                            <i class="glyphicon glyphicon-map-marker"></i> Foothill Highschool
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 profile-stats">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col pull-right">
+
+                                                    <div class="stats-title">Contact</div>
+                                                    <div class="stats-container">
+                                                        <div class="stats-info">Phone: +1 555-555-5555</div>
+                                                        <div class="stats-info">Email: kimryder@abc.com</div>
+                                                        <div class="stats-info">Sykpe: kimryder</div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col pull-right">
+                                                    <div class="stats-title">Location</div>
+                                                    <div class="stats-container">
+                                                        <div class="stats-info">Hartnell Collage</div>
+                                                        <div class="stats-info">411 Central Ave</div>
+                                                        <div class="stats-info">Salinas, Ca. 93901</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="profile-body">
+                                        <div class="col-md-12">
+                                            <div class="tabbable">
+                                                <ul class="nav nav-tabs tabs-flat  nav-justified" id="student-tabnav">
+                                                    <li class="tab-red">
+                                                        <a aria-expanded="false" data-toggle="tab" id="student-messagestab" href="#student-messages">
+                                                            <i class="fa fa-envelope-o"></i> Messages
+                                                        </a>
+                                                    </li>
+                                                    <li class="tab-palegreen">
+                                                        <a aria-expanded="false" data-toggle="tab" id="student-contacttab" href="#student-notes">
+                                                            <i class="fa fa-sticky-note-o"></i> Notes
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+
+
+
+
+                                                <div class="tab-content tabs-flat">
+
+                                                    <div id="student-messages" class="tab-pane animated fadeInDown">
+                                                        <div class="row">
+                                                            <!--messages-->
+                                                            <div class="col-md-12">
+                                                                <div class="chat-discussion" style="max-height:200px; overflow-y:scroll">
+                                                                    <div class=" chat-message left">
+                                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                                            <span class="message-date"> Mon Jan 26 2015 - 18:39:23 </span>
+                                                                            <span class="message-content">
+                                                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message left">
+                                                                        <img class="message-avatar" src="images/avatars/m2.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> Michael Smith </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                                It uses a dictionary of over 200 Latin words.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="chat-message right">
+                                                                        <img class="message-avatar" src="images/avatars/m7.jpg" alt="">
+                                                                        <div class="message">
+                                                                            <a class="message-author" href="#"> John Doe </a>
+                                                                            <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                                                            <span class="message-content">
+                                                                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                                                It uses a dictionary of over 200 Latin words.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <!-- send message-->
+                                                                <hr style="margin:0; margin-left:-12px; margin-right:-12px;" />
+                                                                <div class="chat-message-form bg-white">
+                                                                    <form class="chat-input">
+                                                                        <div class="input-group add-on">
+                                                                            <input class="chat-input-box" placeholder="Send a message..." id="newMessage" type="text">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-default chat-button">Send</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="student-notes" class="tab-pane animated fadeInDown collapse">
+                                                        <div class="row">
+                                                            <!--notes-->
+                                                            <div class="col-md-12">
+                                                                <div class="feed-activity-list bg-white" style="max-height:200px; overflow-y:scroll">
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/m2.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Michael Smith </strong> added note. <br>
+                                                                            <small class="text-muted">2 Weeks ago 5:20 pm - 10.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/f9.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Kim Ryder</strong> added note. <br>
+                                                                            <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="feed-element">
+                                                                        <a ui-sref="profile" class="pull-left">
+                                                                            <img alt="image" class="img-circle" src="images/avatars/f9.jpg">
+                                                                        </a>
+                                                                        <div class="media-body ">
+                                                                            <small class="pull-right">2h ago</small>
+                                                                            <strong>Kim Ryder</strong> added note. <br>
+                                                                            <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                                                            <div class="well">
+                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                                <!-- add note-->
+                                                                <hr style="margin:0; margin-left:-12px; margin-right:-12px;" />
+                                                                <div class="chat-message-form bg-white">
+                                                                    <form class="chat-input">
+                                                                        <div class="input-group add-on">
+                                                                            <input class="chat-input-box" placeholder="Add note..." id="newNote" type="text">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-default chat-button">Add Note</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- end main content wrapper-->
+    <!-- Mainly scripts -->
+    <script src="js/plugins/jquery.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins/jquery.easing.min.js"></script>
+    <script src="js/plugins/jquery.easypiechart.js"></script>
+    <!--<script src="js/plugins/easypiechart-init.js"></script>-->
+    <script src="js/plugins/jquery.countTo.js"></script>
+    <script src="js/plugins/toastr.js"></script>
+    <script src="js/plugins/jquery.slimscroll.min.js"></script>
+    <script src="js/onramp-main-menu.js"></script>
+    <script src="js/onramp-student-view.js"></script>
+
+</body>
+</html>

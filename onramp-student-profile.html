@@ -1,0 +1,1071 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onramp Student Profile</title>
+    <link rel="icon" href="images/pathways-color-icon.png">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery-ui-min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery.tagit.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/radio-style.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-main-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-student-profile.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body id="skin-blur-lights">
+
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- Header -->
+    <header class="l-header">
+
+        <!-- Logo -->
+        <a href="" class="b-logo">
+            <img src="images/logo.png" alt="My Path">
+        </a>
+        <!-- /Logo -->
+
+        <div class="b-sidebar">
+
+            <div class="b-sidebar__overlay"></div>
+
+            <a href="" class="b-sidebar__toggler">
+                <img src="assets/img/menu.svg" alt="">
+            </a>
+
+            <div class="b-sidebar__content">
+
+                <!-- Topbar -->
+                <div class="b-topbar bg-black">
+
+                    <!-- User panel -->
+                    <div class="b-user-panel">
+                        <div class="b-user-panel__info">
+                            <a href="" class="b-user-panel__name">Alexandra Williams</a>
+                            <div class="b-user-panel__pict">
+                                <img src="images/avatars/f3.jpg" class="img-circle avatar-height-30" alt="Alexandra Williams">
+                            </div>
+                        </div>
+                        <ul class="b-user-panel__menu animated fadeInUp">
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-user margin-right-5"></i> Profile</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-question-circle margin-right-5"></i> Help</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-sign-out margin-right-5"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /User panel -->
+                    <!-- Notifications -->
+                    <!-- <div class="b-notifications">
+                        <a href="" class="b-notifications__icon">
+                            <span class="b-notifications__icon-text">
+                                Notifications
+                            </span>
+                            <span class="b-notifications__icon-picture">
+                                <img src="images/notifications.png" alt="">
+                                <span class="b-notifications__count">153</span>
+                            </span>
+                        </a>
+                        <ul class="b-notifications__list">
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_blue">
+                                        <i class="b-icon b-icon_path"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have added a new tool. Click here to try it.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 min. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have received your term paper grade.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 h. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_violet">
+                                        <i class="b-icon b-icon_settings"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have made a system upgradee.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have cancelled your mid term exam.
+                                    </span>
+                                    <span class="b-notifications__item-time">43 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_red">
+                                        <i class="b-icon b-icon_goal"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        The T&amp;C for your Msc. Computer Science have been
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_orange">
+                                        <i class="b-icon b-icon_quote"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        A new quote theme has been installed.
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- /Notifications -->
+                    <!-- Search form -->
+                    <!-- <form class="b-search-form">
+                        <input type="text" class="b-search-form__input" placeholder="Search...">
+                        <button type="submit" class="b-search-form__button"></button>
+                    </form> -->
+                    <!-- /Search form -->
+                    <!-- skin changer modal-->
+                    <div style="display:none;" class="modal fade in" id="changeSkin" tabindex="-1" role="dialog" aria-hidden="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h4 class="modal-title">Change Template Skin</h4></div>
+                                <div class="modal-body">
+                                    <div class="row template-skins">
+                                        <a data-skin="skin-blur-violate" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-violate.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-lights" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-lights.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-city" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-city.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-greenish" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-greenish.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-night" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-night.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-blue" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-blue.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunny" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunny.jpg" alt="">
+
+                                        </a><a data-skin="skin-retro-burn" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-retro-burn.jpg" alt="">
+
+                                        </a><a data-skin="skin-tectile" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-tectile.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-chrome" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chrome.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-ocean" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-ocean.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunset" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunset.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-yellow" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-yellow.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-kiwi" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-kiwi.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-nexus" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-nexus.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-summer-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-summer-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-spring-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-spring-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-chalkboard" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chalkboard.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skin changer modal-->
+
+                </div>
+                <!-- /Topbar -->
+                <!-- Menu -->
+
+                <nav class="b-menu bg_opacity60">
+
+                    <div class="col-lg-6">
+                        <ul class="b-menu__list">
+                            <li class="b-menu__list-item ">
+                                <a href="">Dashboard</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <a id="settings" data-toggle="modal" href="#changeSkin"><i class="fa fa-cog margin-right-5 "></i> Change Skin</a>
+                    </div>
+
+                </nav>
+
+
+                <!-- /Menu -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /Header -->
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- start main content wrapper-->
+    <!-- bread crumb-->
+    <ol class="breadcrumb animated fadeInRight">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li class="active">
+            <a>Student Profile</a>
+        </li>
+    </ol>
+    <!--bread crumb-->
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35">
+                        <h5>Student Profile </h5>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-tabs-theme pull-right" role="tablist">
+                            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false"><i class="fa fa-cogs margin-right-5"></i><span class="hidden-xs hidden-sm">Profile</span></a></li>
+                            <li role="presentation" class=""><a href="#public" aria-controls="public" role="tab" data-toggle="tab" aria-expanded="false"><i class="fa fa-globe margin-right-5"></i><span class="hidden-xs hidden-sm">Public</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!--profile tab-->
+                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="profile">
+                            <div class="ibox-content bg_opacity35">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="module">
+                                            <div class="module-inner">
+                                                <div class="side-bar bg_opacity35">
+                                                    <div class="user-info">
+                                                        <img class="img-profile img-circle img-responsive center-block" src="images/avatars/f3.jpg" alt="">
+                                                        <ul class="meta list list-unstyled">
+                                                            <li class="name">
+                                                                Alexandra Williams
+                                                            </li>
+                                                            <!--<li class="email"><a href="#">alexandrawilliams@website.com</a></li>-->
+                                                            <li class="activity">Last logged in: Today at 2:18pm</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <nav class="side-menu tabs-container ">
+                                                        <ul class="nav nav-tabs">
+                                                            <li class="active"><a data-toggle="tab" href="#tabGeneral"><i class="fa fa-tasks margin-right-5"></i> General</a></li>
+                                                            <li><a data-toggle="tab" href="#tabContact"><i class="fa fa-home margin-right-5"></i> Contact</a></li>
+                                                            <li><a data-toggle="tab" href="#tabAboutMe"><i class="fa fa-user margin-right-5"></i> About Me</a></li>
+                                                            <li><a data-toggle="tab" href="#tabGoals"><i class="fa fa-graduation-cap margin-right-5"></i> Goals</a></li>
+                                                            <li><a data-toggle="tab" href="#tabNotifications"><i class="fa fa-toggle-on margin-right-5"></i> Notifications</a></li>
+                                                            <li><a data-toggle="tab" href="#tabSettings"><i class="fa fa-cog margin-right-5"></i> Settings</a></li>
+                                                        </ul>
+                                                    </nav>
+
+                                                </div>
+                                                <form class="form-horizontal">
+                                                    <div class="content-panel tab-content bg-white">
+
+                                                        <!-- general -->
+                                                        <div id="tabGeneral" class="tab-pane animated fadeIn active">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Personal Info</h2>
+
+                                                                <fieldset class="fieldset">
+                                                                   
+                                                                    <div class="form-group avatar">
+                                                                        <figure class="figure col-md-2 col-sm-3 col-xs-12">
+                                                                            <img class="img-rounded img-responsive" src="images/avatars/f3.jpg" alt="">
+                                                                        </figure>
+                                                                        <div class="form-inline col-md-10 col-sm-9 col-xs-12">
+                                                                            <input class="file-uploader pull-left" type="file">
+                                                                            <button type="submit" class="btn btn-sm btn-default-alt pull-left">Update Image</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <strong>Public Access</strong>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!--<div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="Username" type="text">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableUserName" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>-->
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">First Name</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="First Name" type="text">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableFirstName" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">Last Name</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="Last Name" type="text">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableLastName" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">Gender</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12 ">
+                                                                            <div class="radio radio-info radio-inline">
+                                                                                <input type="radio" name="genderGroup" id="genderGroup-0" value="Male" checked="">
+                                                                                <label class="" for="genderGroup-0">Male</label>
+                                                                            </div>
+                                                                            <div class="radio radio-info radio-inline">
+                                                                                <input type="radio" name="genderGroup" id="genderGroup-1" value="Female" checked="">
+                                                                                <label class="" for="genderGroup-1">Female</label>
+                                                                            </div>
+                                                                            <div class="radio radio-info radio-inline">
+                                                                                <input type="radio" name="genderGroup" id="genderGroup-2" value="N/A" checked="">
+                                                                                <label class="" for="genderGroup-2">Prefer not to disclose</label>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableGender" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">Ethnicity</label>
+                                                                        <div class="col-md-8">
+
+                                                                            <select class="form-control" id="ethnicityID" name="select" style="width:235px;">
+                                                                                <option>Choose one...</option>
+                                                                                <option>African American/Black</option>
+                                                                                <option>American Indian/Alaska Native</option>
+                                                                                <option>Asian</option>
+                                                                                <option>Hispanic</option>
+                                                                                <option>Native Hawaiin/Other Pacfific Islander</option>
+                                                                                <option>Caucasian/White</option>
+                                                                                <option>Other</option>
+                                                                                <option>Prefer not to disclose</option>
+                                                                            </select>
+
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableEthicity" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">Date of Birth</label>
+                                                                        <div class="col-md-8">
+                                                                            <!-- month -->
+                                                                            <div class="col-md-1" style="padding-left:0;">
+                                                                                <select class="form-control bd-drop-down" id="monthID" placeholder="MM" name="select">
+                                                                                    <option style="font-style:italic;" value="00">MM</option>
+                                                                                    <option value="01">01</option>
+                                                                                    <option value="02">02</option>
+                                                                                    <option value="03">03</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <!-- day-->
+
+                                                                            <div class="col-md-1">
+                                                                                <select class="form-control bd-drop-down" id="dayID" placeholder="DD" name="select">
+                                                                                    <option value="00">DD</option>
+                                                                                    <option value="01">01</option>
+                                                                                    <option value="02">02</option>
+                                                                                    <option value="03">03</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <!-- year-->
+
+                                                                            <div class="col-md-1">
+                                                                                <select class="form-control bd-drop-down" id="yearID" name="select">
+                                                                                    <option value="00">YYYY</option>
+                                                                                    <option value="2000">2000</option>
+                                                                                    <option value="2001">2001</option>
+                                                                                    <option value="2002">2002</option>
+                                                                                </select>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableDateOfBirth" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label">Highschool</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="Highschool" type="text">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableHighschool" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </fieldset>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- general -->
+                                                        <!-- contact -->
+                                                        <div id="tabContact" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Contact Information</h2>
+
+                                                                <fieldset class="fieldset">
+                                                                    
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <strong>Public Access</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> Street Address</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="123 West Street" type="text">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableStreetAddress" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> City</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="City" type="text">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableCity" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> State</label>
+                                                                        <div class="col-md-8">
+
+                                                                            <select class="form-control bd-drop-down" id="stateID" placeholder="State" name="select" style="width:200px;">
+                                                                                <option value=" ak">
+                                                                                    Alaska
+                                                                                </option>
+                                                                                <option value="HI">Hawaii</option>
+                                                                                <option value="CA">California</option>
+                                                                                <option value="NV">Nevada</option>
+                                                                                <option value="OR">Oregon</option>
+                                                                                <option value="WA">Washington</option>
+                                                                                <option value="AZ">Arizona</option>
+                                                                                <option value="CO">Colorado</option>
+                                                                                <option value="ID">Idaho</option>
+                                                                                <option value="MT">Montana</option>
+                                                                                <option value="NE">Nebraska</option>
+                                                                                <option value="NM">New Mexico</option>
+                                                                                <option value="ND">North Dakota</option>
+                                                                                <option value="UT">Utah</option>
+                                                                                <option value="WY">Wyoming</option>
+                                                                                <option value="AL">Alabama</option>
+                                                                                <option value="AR">Arkansas</option>
+                                                                                <option value="IL">Illinois</option>
+                                                                                <option value="IA">Iowa</option>
+                                                                                <option value="KS">Kansas</option>
+                                                                                <option value="KY">Kentucky</option>
+                                                                                <option value="LA">Louisiana</option>
+                                                                                <option value="MN">Minnesota</option>
+                                                                                <option value="MS">Mississippi</option>
+                                                                                <option value="MO">Missouri</option>
+                                                                                <option value="OK">Oklahoma</option>
+                                                                                <option value="SD">South Dakota</option>
+                                                                                <option value="TX">Texas</option>
+                                                                                <option value="TN">Tennessee</option>
+                                                                                <option value="WI">Wisconsin</option>
+                                                                                <option value="CT">Connecticut</option>
+                                                                                <option value="DE">Delaware</option>
+                                                                                <option value="FL">Florida</option>
+                                                                                <option value="GA">Georgia</option>
+                                                                                <option value="IN">Indiana</option>
+                                                                                <option value="ME">Maine</option>
+                                                                                <option value="MD">Maryland</option>
+                                                                                <option value="MA">Massachusetts</option>
+                                                                                <option value="MI">Michigan</option>
+                                                                                <option value="NH">New Hampshire</option>
+                                                                                <option value="NJ">New Jersey</option>
+                                                                                <option value="NY">New York</option>
+                                                                                <option value="NC">North Carolina</option>
+                                                                                <option value="OH">Ohio</option>
+                                                                                <option value="PA">Pennsylvania</option>
+                                                                                <option value="RI">Rhode Island</option>
+                                                                                <option value="SC">South Carolina</option>
+                                                                                <option value="VT">Vermont</option>
+                                                                                <option value="VA">Virginia</option>
+                                                                                <option value="WV">West Virginia</option>
+                                                                            </select>
+
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableState" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> Zip</label>
+                                                                        <div class="col-md-8">
+                                                                            <input class="form-control" placeholder="99999" type="text" style="width:200px;">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableZip" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> Student Email</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="Student Email" type="email">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableStudentEmail" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> Student Phone</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="Student Phone" type="tel">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableStudentPhone" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> Guardian Email</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="Guardian Email" type="email">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableGuardianEmail" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"> Guardian Phone</label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <input class="form-control" placeholder="Guardian Phone" type="tel">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableGuardianPhone" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- contact-->
+                                                        <!-- about me-->
+                                                        <div id="tabAboutMe" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">About Me</h2>
+
+                                                                <fieldset class="fieldset">
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <strong>Public Access</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="fieldset-title">Personal Interest</h3>
+                                                                    <div class="form-group">
+                                                                        <!-- personal interest control-->
+                                                                        <label class="col-sm-2 control-label" for="textinput">I'm intrested in</label>
+
+                                                                        <div class="col-sm-8">                                                                           
+                                                                                <ul id="personalInterestList">                                                                                   
+                                                                                </ul>
+                                                                            <span class="text-placeholder">Type any number of intrests end intrest with a "," to add another </span>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnablePersonalInterestList" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="fieldset-title">School Interest</h3>
+                                                                    <div class="form-group">
+                                                                        <!-- personal interest control-->
+                                                                        <label class="col-sm-2 control-label" for="textinput">I'm intrested in</label>
+
+                                                                        <div class="col-sm-8">
+                                                                            <ul id="schoolInterestList"></ul>
+                                                                            <span class="text-placeholder">Type any number of intrests end intrest with a "," to add another </span>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableSchoolInterestList" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <!-- bio control-->
+                                                                        <label class="col-sm-2 control-label" for="textinput">Bio</label>
+                                                                        <div class="col-sm-8">
+                                                                            <textarea rows="5" placeholder="Say something about yourself" class="form-control"></textarea>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableBio" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- about me-->
+
+                                                        <!-- goals-->
+                                                        <div id="tabGoals" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Goals</h2>
+
+                                                                <fieldset class="fieldset">
+                                                             
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <strong>Public Access</strong>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="fieldset-title">Career Goals</h3>
+                                                                    <div class="form-group">
+                                                                        <!-- career control-->
+                                                                        <label class="col-sm-2 control-label" for="textinput">I want to be a(n)</label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="text" placeholder="Graphic Designer" class="form-control">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableIWantToBe" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="fieldset-title">Education Goals</h3>
+                                                                    <div class="form-group">
+                                                                        <!-- career control-->
+                                                                        <label class="col-sm-2 control-label" for="textinput">I want to achieve</label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="text" placeholder="Obtain a 4 year degree in..." class="form-control">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableIWantToBe" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE">
+                                                                        </div>
+                                                                    </div>
+
+                                                                   
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- goals-->
+                                                        <!-- notifications-->
+                                                        <div id="tabNotifications" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Notifications</h2>
+
+                                                                <fieldset class="fieldset">
+
+                                                                    <div class="form-group">
+                                                                        <!-- notification checkbox / toggle controls -->
+                                                                        <label class="col-sm-2 control-label" for="enableStatusChangeNotification"> Receive Email Notifications </label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="checkbox" id="enableStatusChangeNotification" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-color="info"  >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <!-- notification checkbox / toggle controls -->
+                                                                        <label class="col-sm-2 control-label" for="enableStatusChangeNotification"> Receive Text Notifications </label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="checkbox" id="enableTextNotification" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-color="info" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <!-- notification checkbox / toggle controls -->
+                                                                        <label class="col-sm-2 control-label" for="enableStatusChangeNotification">  Turn on Parent Notifications </label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="checkbox" id="enableGuardianNotification" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-color="info"  >
+                                                                        </div>
+                                                                    </div>
+
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- notifications-->
+                                                        <!-- settings-->
+                                                        <div id="tabSettings" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Settings</h2>
+
+                                                                <fieldset class="fieldset">
+                                                                
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <strong>Public Access</strong>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>GPA</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display your GPA</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableGPA" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>Connections</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display who you are connected with.</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableConnections" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>Followers</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display who is following you.</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableFollowers" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-2 col-sm-3 col-xs-12 control-label"><bold>Recent Activity</bold></label>
+                                                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                            <label class="col-md-8 control-label-desc">Display your current recent activity.</label>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <input type="checkbox" id="pubEnableRecentActivity" checked data-toggle="toggle" data-style="slow" data-size="mini" data-on-text="SHOW" data-on-color="info" data-off-text="HIDE" >
+                                                                        </div>
+                                                                    </div>
+
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- settings-->
+
+                                                    </div>
+                                                </form>
+                                                <hr>
+                                                <div class="form-group">
+                                                    <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                                                        <input class="btn btn-white btn-sm pull-right" value="Cancel" type="submit">
+                                                        <input class="btn btn-white btn-sm pull-right m-r-sm" value="Update Profile" type="submit">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--profile tab-->
+                        <!--public tab-->
+                        <div role="tabpanel" class="tab-pane animated fadeIn" id="public">
+                            <div class="ibox-content bg_opacity35">
+                                <div class="row">
+
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12  bg-retro-burn" style="min-height:150px;">
+
+                                        </div>
+
+                                        <div class="col-sm-12 bg-white">
+
+                                            <div class="row ">
+
+                                                <div class="col-sm-2 profile-pic">
+                                                    <img src="images/avatars/f3.jpg">
+
+                                                    <br>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-xs"><i class="fa fa-envelope-o"></i> Send Message</a>
+                                                    <br>
+
+                                                    <div class="padding-10">
+                                                        <h4 class="font-md">
+                                                            <strong><span class="text-muted u-align-right">325</span></strong>
+                                                            <br>
+                                                            <small>Followers</small>
+                                                        </h4>
+                                                        <br>
+                                                        <h4 class="font-md">
+                                                            <strong><span class="text-muted u-align-right">125</span></strong>
+                                                            <br>
+                                                            <small>Connections</small>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h1>
+                                                        Alexandra <span class="semi-bold">Williams</span>
+                                                        <br>
+
+                                                    </h1>
+
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;<span class="txt-color-darken">Cupertino Highschool</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-phone"></i>&nbsp;&nbsp;(<span class="txt-color-darken">313</span>) <span class="txt-color-darken">464</span> - <span class="txt-color-darken">6473</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a class="link" href="mailto:">alexandrawilliams@website.com</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-skype"></i>&nbsp;&nbsp;<span class="txt-color-darken">alexandrawilliams</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-birthday-cake"></i>&nbsp;&nbsp;<span class="txt-color-darken">12/1/1982</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-paint-brush"></i>&nbsp;&nbsp;<span class="txt-color-darken">Caucasian/White</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-female"></i>&nbsp;&nbsp;<span class="txt-color-darken">Female</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<span class="txt-color-darken">123 West Street Sacramento, Ca. 95864</span>
+                                                            </p>
+                                                        </li>
+
+                                                    </ul>
+
+
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h1>
+
+                                                        <br>
+
+                                                    </h1>
+
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-bar-chart-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">3.2 GPA</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-star-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">Personal Intrests</span>
+                                                                <ol>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Dancing</span></li>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Mediation</span></li>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Reading</span></li>
+                                                                </ol>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-star-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">Personal Intrests</span>
+                                                                <ol>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Math</span></li>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Science</span></li>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Music</span></li>
+                                                                </ol>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+
+
+                                                </div>
+
+
+                                                <div class="col-sm-3">
+                                                    <h1><small>Connections</small></h1>
+                                                    <ul class="list-inline friends-list">
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f5.jpg" alt="friend-1">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f6.jpg" alt=" friend-2">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m5.jpg" alt=" friend-3">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m2.jpg" alt="friend-4">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f8.jpg" alt="friend-5">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m8.jpg" alt="friend-6">
+                                                        </li>
+                                                        <li>
+                                                            <a class="link" href="javascript:void(0);">13 more</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <h1><small>Recent activies</small></h1>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Was successfully enrolled</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Met with a counsoler</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Has new assigned education plan</span>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col-sm-7">
+                                                    <br>
+                                                    <p class="font-md">
+                                                        <i style="font-style:italic;">A little about me...</i>
+                                                    </p>
+                                                    <p>
+                                                        <bold> I want to be a Business Owner</bold>
+                                                    </p>
+                                                    <p>
+                                                        Alexandra Williams is finishing her last year at DePaul Highschool where she is interested in business. Although she has yet to declare a major, she’s considering finance or marketing. After watching her parents run a restaurant for years, she knew at a very young age that she also wanted to go into business. In high school, Alison waited tables at the family restaurant during the summer and was fascinated by the many working parts it takes to operate a successful business. From this experience, she learned the value of hard work, efficiency, and communication. In the future, she hopes to continue her parents’ legacy and run her own five-star restaurant in downtown. Alison spends her spare time singing in her church choir and cooking for friends and family.
+                                                    </p>
+
+                                                    <br>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- end row -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--public tab-->
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- end main content wrapper-->
+    <!-- Mainly scripts -->
+    <script src="js/plugins/jquery.js"></script>
+    <script src="js/plugins/jquery-ui.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/bootstrap-switch.min.js"></script>
+
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins/jquery.easing.min.js"></script>
+    <script src="js/plugins/jquery.easypiechart.js"></script>
+    <!--<script src="js/plugins/easypiechart-init.js"></script>-->
+    <script src="js/plugins/jquery.countTo.js"></script>
+    <script src="js/plugins/toastr.js"></script>
+    <script src="js/plugins/tag-it.js"></script>
+    <script src="js/plugins/jquery.slimscroll.min.js"></script>
+    <script src="js/onramp-main-menu.js"></script>
+    <script src="js/onramp-student-profile.js"></script>
+
+</body>
+</html>
