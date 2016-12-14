@@ -5036,29 +5036,34 @@ table.table-mail tr td {
 }
 /* COLORS */
 .text-navy {
-  color: #1ab394;
+  color: #1ab394!important;
 }
 .text-primary {
   color: inherit;
 }
 .text-success {
-  color: #1c84c6;
+  color: #1c84c6!important;
 }
 .text-info {
-  color: #23c6c8;
+  color: #23c6c8!important;
 }
 .text-warning {
-  color: #f8ac59;
+  color: #f8ac59!important;
 }
 .text-danger {
-  color: #ed5565;
+  color: #ed5565!important;
 }
 .text-muted {
-  color: #888888;
+  color: #888888!important;
 }
 .text-white {
-  color: #ffffff;
+  color: #ffffff!important;
 }
+
+.text-black {
+  color: #000!important;
+}
+
 .simple_tag {
   background-color: #f3f3f4;
   border: 1px solid #e7eaec;
@@ -6362,7 +6367,8 @@ dd.project-people {
   border: none;
 }
 .client-link {
-  color: inherit;
+	color: inherit;
+	padding-left: 10px;
 }
 .client-link:hover {
   color: inherit;

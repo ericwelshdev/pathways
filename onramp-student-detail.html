@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onramp Student Detail</title>
+    <link rel="icon" href="images/pathways-color-icon.png">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery-ui-min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/jquery.tagit.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/radio-style.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-main-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/onramp-student-detail.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body id="skin-blur-lights">
+
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- Header -->
+    <header class="l-header">
+
+        <!-- Logo -->
+        <a href="" class="b-logo">
+            <img src="images/logo.png" alt="My Path">
+        </a>
+        <!-- /Logo -->
+
+        <div class="b-sidebar">
+
+            <div class="b-sidebar__overlay"></div>
+
+            <a href="" class="b-sidebar__toggler">
+                <img src="assets/img/menu.svg" alt="">
+            </a>
+
+            <div class="b-sidebar__content">
+
+                <!-- Topbar -->
+                <div class="b-topbar bg-black">
+
+                    <!-- User panel -->
+                    <div class="b-user-panel">
+                        <div class="b-user-panel__info">
+                            <a href="" class="b-user-panel__name">Alexandra Williams</a>
+                            <div class="b-user-panel__pict">
+                                <img src="images/avatars/f3.jpg" class="img-circle avatar-height-30" alt="Alexandra Williams">
+                            </div>
+                        </div>
+                        <ul class="b-user-panel__menu animated fadeInUp">
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-user margin-right-5"></i> Profile</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-question-circle margin-right-5"></i> Help</a>
+                            </li>
+                            <li class="b-user-panel__menu-item">
+                                <a href=""><i class="fa fa-sign-out margin-right-5"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /User panel -->
+                    <!-- Notifications -->
+                    <!-- <div class="b-notifications">
+                        <a href="" class="b-notifications__icon">
+                            <span class="b-notifications__icon-text">
+                                Notifications
+                            </span>
+                            <span class="b-notifications__icon-picture">
+                                <img src="images/notifications.png" alt="">
+                                <span class="b-notifications__count">153</span>
+                            </span>
+                        </a>
+                        <ul class="b-notifications__list">
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_blue">
+                                        <i class="b-icon b-icon_path"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have added a new tool. Click here to try it.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 min. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have received your term paper grade.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 h. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_violet">
+                                        <i class="b-icon b-icon_settings"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        We have made a system upgradee.
+                                    </span>
+                                    <span class="b-notifications__item-time">13 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_cyan">
+                                        CS55
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        You have cancelled your mid term exam.
+                                    </span>
+                                    <span class="b-notifications__item-time">43 d. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_red">
+                                        <i class="b-icon b-icon_goal"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        The T&amp;C for your Msc. Computer Science have been
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                            <li class="b-notifications__item">
+                                <a href="">
+                                    <span class="b-notifications__item-icon b-notifications__item-icon_orange">
+                                        <i class="b-icon b-icon_quote"></i>
+                                    </span>
+                                    <span class="b-notifications__item-text">
+                                        A new quote theme has been installed.
+                                    </span>
+                                    <span class="b-notifications__item-time">4 mon. ago</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- /Notifications -->
+                    <!-- Search form -->
+                    <!-- <form class="b-search-form">
+                        <input type="text" class="b-search-form__input" placeholder="Search...">
+                        <button type="submit" class="b-search-form__button"></button>
+                    </form> -->
+                    <!-- /Search form -->
+                    <!-- skin changer modal-->
+                    <div style="display:none;" class="modal fade in" id="changeSkin" tabindex="-1" role="dialog" aria-hidden="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h4 class="modal-title">Change Template Skin</h4></div>
+                                <div class="modal-body">
+                                    <div class="row template-skins">
+                                        <a data-skin="skin-blur-violate" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-violate.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-lights" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-lights.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-city" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-city.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-greenish" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-greenish.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-night" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-night.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-blue" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-blue.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunny" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunny.jpg" alt="">
+
+                                        </a><a data-skin="skin-retro-burn" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-retro-burn.jpg" alt="">
+
+                                        </a><a data-skin="skin-tectile" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-tectile.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-chrome" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chrome.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-ocean" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-ocean.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-sunset" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-sunset.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-yellow" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-yellow.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-kiwi" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-kiwi.jpg" alt="">
+
+                                        </a><a data-skin="skin-blur-nexus" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-nexus.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-summer-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-summer-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-spring-bokeh" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-spring-bokeh.jpg" alt="">
+                                        </a>
+                                        <a data-skin="skin-blur-chalkboard" class="col-sm-2 col-xs-4" href="">
+                                            <img src="images/skins/skin-chalkboard.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skin changer modal-->
+
+                </div>
+                <!-- /Topbar -->
+                <!-- Menu -->
+
+                <nav class="b-menu bg_opacity60">
+
+                    <div class="col-lg-6">
+                        <ul class="b-menu__list">
+                            <li class="b-menu__list-item ">
+                                <a href="">Dashboard</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <a id="settings" data-toggle="modal" href="#changeSkin"><i class="fa fa-cog margin-right-5 "></i> Change Skin</a>
+                    </div>
+
+                </nav>
+
+
+                <!-- /Menu -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /Header -->
+    <!-- MAIN HEADER TOOLBAR-->
+    <!-- start main content wrapper-->
+    <!-- bread crumb-->
+    <ol class="breadcrumb animated fadeInRight">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li class="active">
+            <a>Student Profile</a>
+        </li>
+    </ol>
+    <!--bread crumb-->
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title bg_opacity35">
+                        <h5>Student Detail </h5>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-tabs-theme pull-right" role="tablist">
+                            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false"><i class="fa fa-cogs margin-right-5"></i><span class="hidden-xs hidden-sm">Profile</span></a></li>
+                            <li role="presentation" class=""><a href="#public" aria-controls="public" role="tab" data-toggle="tab" aria-expanded="false"><i class="fa fa-globe margin-right-5"></i><span class="hidden-xs hidden-sm">Public</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!--profile tab-->
+                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="profile">
+                            <div class="ibox-content bg_opacity35">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="module">
+                                            <div class="module-inner">
+                                                <div class="side-bar bg_opacity35">
+                                                    <div class="user-info">
+                                                        <img class="img-profile img-circle img-responsive center-block" src="images/avatars/f3.jpg" alt="">
+                                                        <ul class="meta list list-unstyled">
+                                                            <li class="name">
+                                                                Alexandra Williams
+                                                            </li>                                                                                                  
+                                                        </ul>
+                                                        <ul class="list-unstyled attr ">
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                  <span class="txt-color-darken">
+                                                                    <span>123 West Street Sacramento</span>
+                                                                    <br />
+                                                                    <span>Ca. 95864</span></span>&nbsp;&nbsp;<i class="fa fa-map-marker"></i>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                    <a class="link" href="mailto:">alexandrawilliams@website.com</a>&nbsp;&nbsp;<i class="fa fa-envelope"></i>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                   (<span class="txt-color-darken">313</span>) <span class="txt-color-darken">464</span> - <span class="txt-color-darken">6473</span>&nbsp;&nbsp;<i class="fa fa-phone"></i>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                   <span class="txt-color-darken">Caucasian/White</span>&nbsp;&nbsp;<i class="fa fa-paint-brush"></i>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                  <span class="txt-color-darken">Accounting</span>&nbsp;&nbsp;<i class="fa fa-book"></i>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted">
+                                                                   <span class="txt-color-darken">Blah</span>&nbsp;&nbsp;<i class="fa fa-trophy"></i>
+                                                                </p>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+
+  
+                                                </div>
+                                                
+
+                                                <div class="nav-bar bg_opacity60">
+                                                    <nav class="side-menu tabs-container ">
+                                                        <ul class="nav nav-tabs">
+                                                            <li class="active"><a data-toggle="tab" href="#tabNotes"> Notes </a></li>
+                                                            <li><a data-toggle="tab" href="#tabEmail"> Email</a></li>
+                                                            <li><a data-toggle="tab" href="#tabHistory"> History</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                                <form class="form-horizontal">
+                                                    <div class="content-panel sub tab-content bg_opacity80 ">
+
+                                                        <!-- notes -->
+                                                        <div id="tabNotes" class="tab-pane animated fadeIn active">
+                                                            <div class="panel-body sub">
+                                                                <h2 class="title"> 
+                                                                    <span role="search" class="pull-right" action="#">
+                                                                        <span id="search-notes">
+                                                                            <input class="" placeholder="Search..." type="text"><button data-original-title="Search" type="submit" class="tip-right" title=""><i class="fa fa-search"></i></button>
+                                                                        </span>
+                                                                    </span>
+                                                                 </h2>
+
+                                                                <div class="nav-bar sub ">
+                                                                    <nav class="side-menu tabs-container ">
+                                                                        <ul class="nav nav-tabs">
+                                                                            <li class="active"><a data-toggle="tab" href="#tabNotes"> Note 0</a></li>
+                                                                            <li><a data-toggle="tab" href="#note1"> Note 1</a></li>
+                                                                            <li><a data-toggle="tab" href="#note1"> Note 2</a></li>
+                                                                            <li><a data-toggle="tab" href="#note1"> Note 3</a></li>
+                                                                            <li><a data-toggle="tab" href="#note1"> Note 4</a></li>
+                                                                            <li><a data-toggle="tab" href="#note1"> Note 5</a></li>
+                                                                        </ul>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- notes -->
+                                                        <!-- email -->
+                                                        <div id="tabEmail" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">Email</h2>
+
+                                                                
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- email-->
+                                                        <!-- history-->
+                                                        <div id="tabHistory" class="tab-pane animated fadeIn">
+                                                            <div class="panel-body">
+                                                                <h2 class="title">History</h2>
+
+                                                                
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- history-->
+
+
+
+                                                    </div>
+                                                </form>
+                                                <hr>
+                                                <div class="form-group">
+                                                    <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                                                        <input class="btn btn-white btn-sm pull-right" value="Cancel" type="submit">
+                                                        <input class="btn btn-white btn-sm pull-right m-r-sm" value="Update Profile" type="submit">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--profile tab-->
+                        <!--public tab-->
+                        <div role="tabpanel" class="tab-pane animated fadeIn" id="public">
+                            <div class="ibox-content bg_opacity35">
+                                <div class="row">
+
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12  bg-retro-burn" style="min-height:150px;">
+
+                                        </div>
+
+                                        <div class="col-sm-12 bg-white">
+
+                                            <div class="row ">
+
+                                                <div class="col-sm-2 profile-pic">
+                                                    <img src="images/avatars/f3.jpg">
+
+                                                    <br>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-xs"><i class="fa fa-envelope-o"></i> Send Message</a>
+                                                    <br>
+
+                                                    <div class="padding-10">
+                                                        <h4 class="font-md">
+                                                            <strong><span class="text-muted u-align-right">325</span></strong>
+                                                            <br>
+                                                            <small>Followers</small>
+                                                        </h4>
+                                                        <br>
+                                                        <h4 class="font-md">
+                                                            <strong><span class="text-muted u-align-right">125</span></strong>
+                                                            <br>
+                                                            <small>Connections</small>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h1>
+                                                        Alexandra <span class="semi-bold">Williams</span>
+                                                        <br>
+
+                                                    </h1>
+
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;<span class="txt-color-darken">Cupertino Highschool</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-phone"></i>&nbsp;&nbsp;(<span class="txt-color-darken">313</span>) <span class="txt-color-darken">464</span> - <span class="txt-color-darken">6473</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a class="link" href="mailto:">alexandrawilliams@website.com</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-skype"></i>&nbsp;&nbsp;<span class="txt-color-darken">alexandrawilliams</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-birthday-cake"></i>&nbsp;&nbsp;<span class="txt-color-darken">12/1/1982</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-paint-brush"></i>&nbsp;&nbsp;<span class="txt-color-darken">Caucasian/White</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-female"></i>&nbsp;&nbsp;<span class="txt-color-darken">Female</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<span class="txt-color-darken">123 West Street Sacramento, Ca. 95864</span>
+                                                            </p>
+                                                        </li>
+
+                                                    </ul>
+
+
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h1>
+
+                                                        <br>
+
+                                                    </h1>
+
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-bar-chart-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">3.2 GPA</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-star-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">Personal Intrests</span>
+                                                                <ol>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Dancing</span></li>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Mediation</span></li>
+                                                                    <li><i class="fa fa-thumb-tack m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Reading</span></li>
+                                                                </ol>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text-muted">
+                                                                <i class="fa fa-star-o"></i>&nbsp;&nbsp;<span class="txt-color-darken">Personal Intrests</span>
+                                                                <ol>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Math</span></li>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Science</span></li>
+                                                                    <li><i class="fa fa-book m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Music</span></li>
+                                                                </ol>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+
+
+                                                </div>
+
+
+                                                <div class="col-sm-3">
+                                                    <h1><small>Connections</small></h1>
+                                                    <ul class="list-inline friends-list">
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f5.jpg" alt="friend-1">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f6.jpg" alt=" friend-2">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m5.jpg" alt=" friend-3">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m2.jpg" alt="friend-4">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/f8.jpg" alt="friend-5">
+                                                        </li>
+                                                        <li>
+                                                            <img class="friend-avatar" src="images/avatars/m8.jpg" alt="friend-6">
+                                                        </li>
+                                                        <li>
+                                                            <a class="link" href="javascript:void(0);">13 more</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <h1><small>Recent activies</small></h1>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Was successfully enrolled</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Met with a counsoler</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-tasks m-l-md"></i>&nbsp;&nbsp;<span class="txt-color-darken">Has new assigned education plan</span>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col-sm-7">
+                                                    <br>
+                                                    <p class="font-md">
+                                                        <i style="font-style:italic;">A little about me...</i>
+                                                    </p>
+                                                    <p>
+                                                        <bold> I want to be a Business Owner</bold>
+                                                    </p>
+                                                    <p>
+                                                        Alexandra Williams is finishing her last year at DePaul Highschool where she is interested in business. Although she has yet to declare a major, she’s considering finance or marketing. After watching her parents run a restaurant for years, she knew at a very young age that she also wanted to go into business. In high school, Alison waited tables at the family restaurant during the summer and was fascinated by the many working parts it takes to operate a successful business. From this experience, she learned the value of hard work, efficiency, and communication. In the future, she hopes to continue her parents’ legacy and run her own five-star restaurant in downtown. Alison spends her spare time singing in her church choir and cooking for friends and family.
+                                                    </p>
+
+                                                    <br>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- end row -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--public tab-->
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- end main content wrapper-->
+    <!-- Mainly scripts -->
+    <script src="js/plugins/jquery.js"></script>
+    <script src="js/plugins/jquery-ui.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/bootstrap-switch.min.js"></script>
+
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins/jquery.easing.min.js"></script>
+    <script src="js/plugins/jquery.easypiechart.js"></script>
+    <!--<script src="js/plugins/easypiechart-init.js"></script>-->
+    <script src="js/plugins/jquery.countTo.js"></script>
+    <script src="js/plugins/toastr.js"></script>
+    <script src="js/plugins/tag-it.js"></script>
+    <script src="js/plugins/jquery.slimscroll.min.js"></script>
+    <script src="js/onramp-main-menu.js"></script>
+    <script src="js/onramp-student-detail.js"></script>
+
+</body>
+</html>

@@ -99,16 +99,21 @@ $('.add-note').on('click', function () {
     $('#currentNote').addClass('hide');
     $('#editNote').removeClass('hide');
 
-    $('#saveNoteButton').toggleClass('hide');
-    $('#cancelNoteButton').toggleClass('hide')
+    $('#saveNoteButton').removeClass('hide');
+    $('#cancelNoteButton').removeClass('hide')
     $('#closeNoteButton').addClass('hide')
+
+    $('.media-header').addClass('hide')
+
+    $('.noteHeaderViewMode').addClass('hide')
+    $('.noteHeaderAddMode').removeClass('hide')
 
     $('.nav-tabs a[href="#currentNoteTab"]').tab('show');
     ;
 });
 
 
-// switch note text
+// edit note text
 $('.edit-note').on('click', function () {
     var wellNote = $('#currentNote');
     var editNote = $('#editNote');
@@ -144,7 +149,9 @@ $('#saveNoteButton , #cancelNoteButton').on('click', function () {
 
     $('#closeNoteButton').removeClass('hide');
 
-
+    $('.media-header').removeClass('hide')
+    $('.noteHeaderViewMode').removeClass('hide')
+    $('.noteHeaderAddMode').addClass('hide')
 
 });
 
