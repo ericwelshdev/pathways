@@ -4,7 +4,7 @@
   <Identity Name="321211f2-6834-43d0-aa36-a63f4a298728" Version="1.0.0.0" Publisher="CN=Admin" />
 
   <Properties>
-    <DisplayName>pathways.bootstrap</DisplayName>
+    <DisplayName>pathways</DisplayName>
     <PublisherDisplayName>Admin</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
@@ -21,7 +21,7 @@
   <Applications>
     <Application Id="App" StartPage="default.html">
 
-      <m2:VisualElements DisplayName="pathways.bootstrap" Description="pathways.bootstrap" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+      <m2:VisualElements DisplayName="pathways" Description="pathways" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
 
         <m2:SplashScreen Image="images\splashscreen.png" />
 

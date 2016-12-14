@@ -20,9 +20,8 @@
     <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css">
     <link href="css/onramp-main-menu.css" rel="stylesheet" type="text/css">
     <link href="css/main-style.css" rel="stylesheet" type="text/css">
-    <link href="css/onramp-counselor-srm.css" rel="stylesheet" type="text/css">
-
-
+    <link href="css/onramp-student-srm.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.css" rel="stylesheet" type="text/css">
 </head>
 <body id="skin-blur-lights">
 
@@ -186,7 +185,7 @@
 
                             </li>
                             <li class="b-menu__list-item">
-                                <a class="dropdown-toggle" data-toggle="dropdown">Analytics</a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">explore</a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li> <a href="">Dashboard</a> </li>
                                     <li> <a href="">Search</a> </li>
@@ -285,224 +284,254 @@
                                                                 <!--task list-->
                                                                 <div class="row">
 
-                                                                    <div class="table-responsive">
-                                                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="taskList_wrapper">
-                                                                            <table role="grid" id="taskList" class="table table-striped table-hover dataTable no-footer">
-                                                                                <thead>
-                                                                                    <tr role="row">
-                                                                                        <th aria-label="Status: activate to sort column descending" aria-sort="ascending" style="width: 50px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting_asc">Status</th>
-                                                                                        <th aria-label="Task ID: activate to sort column descending" aria-sort="ascending" style="width: 50px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting_asc">Task ID</th>
-                                                                                        <th aria-label="Task: activate to sort column ascending" style="width: 424px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Task</th>
-                                                                                        <th aria-label="Owner: activate to sort column ascending" style="width: 202px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Owner</th>
-                                                                                        <th aria-label="Assigned: activate to sort column ascending" style="width: 200px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Assigned</th>
-                                                                                        <th aria-label="Due Date: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Due Date</th>
-                                                                                        <th aria-label="Priority: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Priority</th>
-                                                                                        <th aria-label="Notes: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Notes</th>
-                                                                                    </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>1</td>
-                                                                                        <td>Task 1</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Alice Redding</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-info">5-Pending</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>2</td>
-                                                                                        <td>Task 2</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Bob Silver</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-danger">1-High</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>3</td>
-                                                                                        <td>Task 3</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>4</td>
-                                                                                        <td>Task 4</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>5</td>
-                                                                                        <td>Task 5</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>6</td>
-                                                                                        <td>Task 6</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>7</td>
-                                                                                        <td>Task 7</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>8</td>
-                                                                                        <td>Task 8</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>9</td>
-                                                                                        <td>Task 9</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
-                                                                                                <div class="checkbox">
-                                                                                                    <label>
-                                                                                                        <input id="taskCheck" type="checkbox" value="">
-                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>10</td>
-                                                                                        <td>Task 10</td>
-                                                                                        <td>Alexandra Williams</td>
-                                                                                        <td>Tim Allen</td>
-                                                                                        <td>01/04/2016</td>
-                                                                                        <td><span class="label label-warning">2-Medium</span></td>
-                                                                                        <td>Some Notes blah blah</td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
+
+                                                                    <div id="fullpage">
+
+                                                                        <div class="section fp-auto-height" id="section1">
+                                                                            <div class="slide" id="slide1" data-anchor="slide1">
+                                                                                <div class="intro">
+                                                                                    <div class="table-responsive">
+                                                                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="taskList_wrapper">
+                                                                                            <table role="grid" id="taskList" class="table table-striped table-hover dataTable no-footer">
+                                                                                                <thead>
+                                                                                                    <tr role="row">
+                                                                                                        <th aria-label="Status: activate to sort column descending" aria-sort="ascending" style="width: 50px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting_asc">Status</th>
+                                                                                                        <th aria-label="Task ID: activate to sort column descending" aria-sort="ascending" style="width: 50px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting_asc">Task ID</th>
+                                                                                                        <th aria-label="Task: activate to sort column ascending" style="width: 424px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Task</th>
+                                                                                                        <th aria-label="Owner: activate to sort column ascending" style="width: 202px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Owner</th>
+                                                                                                        <th aria-label="Assigned: activate to sort column ascending" style="width: 200px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Assigned</th>
+                                                                                                        <th aria-label="Due Date: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Due Date</th>
+                                                                                                        <th aria-label="Priority: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Priority</th>
+                                                                                                        <th aria-label="Notes: activate to sort column ascending" style="width: 145px;" colspan="1" rowspan="1" aria-controls="taskList" tabindex="0" class="sorting">Notes</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>1</td>
+                                                                                                        <td><a style="color:cornflowerblue" href="#slide1/slide2" >Task 1</a></td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Alice Redding</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-info">5-Pending</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>2</td>
+                                                                                                        <td><a style="color:cornflowerblue" href="#slide1/slide2">Task 2</a></td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Bob Silver</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-danger">1-High</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>3</td>
+                                                                                                        <td><a style="color:cornflowerblue" href="#slide1/slide2">Task 3</a></td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>4</td>
+                                                                                                        <td><a style="color:cornflowerblue" href="#slide1/slide2">Task 4</a></td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>5</td>
+                                                                                                        <td><a style="color:cornflowerblue" href="#slide1/slide2">Task 5</a></td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>6</td>
+                                                                                                        <td>Task 6</td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>7</td>
+                                                                                                        <td>Task 7</td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>8</td>
+                                                                                                        <td>Task 8</td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>9</td>
+                                                                                                        <td>Task 9</td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="checkbox m-r-xs pd-right10 pd-left10">
+                                                                                                                <div class="checkbox">
+                                                                                                                    <label>
+                                                                                                                        <input id="taskCheck" type="checkbox" value="">
+                                                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td>10</td>
+                                                                                                        <td>Task 10</td>
+                                                                                                        <td>Alexandra Williams</td>
+                                                                                                        <td>Tim Allen</td>
+                                                                                                        <td>01/04/2016</td>
+                                                                                                        <td><span class="label label-warning">2-Medium</span></td>
+                                                                                                        <td>Some Notes blah blah</td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                                <div class="form-group pull-left">
+                                                                                    <a href="" class="btn btn-white btn-sm pull-left " data-toggle="modal" data-placement="top" data-dismiss="modal" data-target="#addTaskModal" title="Add Task"><i class="fa fa-search"></i> Add Task</a>
+
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <div class="slide" id="slide2" data-anchor="slide2">
+                                                                                <h1>Edit Mode 1</h1>
+                                                                                <a style="color:cornflowerblue" href="#slide1/slide3">Go to Edit Mode 2</a>
+                                                                                <br />
+                                                                                <a style="color:cornflowerblue" href="#slide1/slide1">Back</a>
+                                                                            </div>
+
+                                                                            <div class="slide" id="slide3" data-anchor="slide3">
+                                                                                <h1>Edit mode 2</h1>
+                                                                                <a style="color:cornflowerblue" href="#slide1/slide1">Go to Main List</a>
+                                                                                <br />
+                                                                                <a style="color:cornflowerblue" href="#slide1/slide2">Back</a>
+                                                                            </div>
+
                                                                         </div>
+                                              
+
                                                                     </div>
-
-
-                                                                </div>
-
-                                                                <div class="form-group pull-left">
-                                                                    <a href="" class="btn btn-white btn-sm pull-left " data-toggle="modal" data-placement="top" data-dismiss="modal" data-target="#addTaskModal" title="Add Task"><i class="fa fa-search"></i> Add Task</a>
+                                                                  
 
                                                                 </div>
+
+
 
                                                             </div>
 
@@ -1534,9 +1563,22 @@
     <script src="js/plugins/toastr.js"></script>
     <script src="js/plugins/tag-it.js"></script>
     <script src="js/plugins/bootstrap-datepicker.min.js"></script>
-    <script src="js/plugins/jquery.slimscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.js"></script>
+
+    <script src="js/plugins/jquery.easing.min.js"></script>
     <script src="js/onramp-main-menu.js"></script>
-    <script src="js/onramp-counselor-srm.js"></script>
+    <script src="js/onramp-student-srm.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['slide1', 'slide2', 'slide3'],
+				slidesNavigation: false,
+				controlArrows: false
+
+			});
+		});
+    </script>
 
 </body>
 </html>

@@ -118,6 +118,10 @@ background: rgba(0,0,0,0.35)!important;
 background: rgba(0,0,0,0.60)!important;
 }
 
+.bg_opacity80{
+background: rgba(0,0,0,0.80)!important;
+}
+
 @media (min-width: 1024px) {
     /* --------------------------------------------------------
         Template Blur Skins for Desktop
@@ -297,6 +301,8 @@ img {
 	max-width: 100%;
 }
 
+
+.hide{display:none;}
 .border-bottom-radius{
     -webkit-border-radius: 0 0 5px 5px!important;
 	-moz-border-radius: 0 0 5px 5px!important;
@@ -408,6 +414,10 @@ img {
     }
     .bg-blur-spring-bokeh {
         background-image: url(../images/skins/spring-bokeh.jpg);
+    }
+
+    .bg-wet-deck {
+        background-image: url(../images/bg-bw-panel-1.jpg);
     }
     
 /* backgroup images*/
@@ -571,6 +581,22 @@ h5 {
 
 .m-bottom4{
     margin-bottom:4px!important;
+}
+
+.m-b-5 {
+    margin-bottom:5px;
+}
+
+
+.m-b-15 {
+    margin-bottom:15px;
+}
+
+.m-t-0{
+    margin-top:0px;
+} 
+.p-b-10{
+    padding-bottom:10px;
 }
 
 .row {
@@ -6336,14 +6362,14 @@ dd.project-people {
   border: none;
 }
 .client-link {
-  font-weight: 600;
   color: inherit;
 }
 .client-link:hover {
   color: inherit;
 }
 .client-avatar {
-  width: 42px;
+	width: 150px;
+	white-space: nowrap;
 }
 .client-avatar img {
   width: 28px;
